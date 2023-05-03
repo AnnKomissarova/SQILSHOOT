@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/awesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="#" class="logo"><img src="icons/TIR.svg"></a>
+            <div class="header-right">
+                <a href="">UserName</a>
+                <a href="">
+                    <div class="avatar"><img src=""></div>
+                </a>
+                <a href="">RU</a>
+                <img src="icons/language-arrow.svg" alt="" class="language">
+            </div>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <a href="index.html">
+                <div class="circle"><img src="icons/main.svg" class="menu-icon"></div>
+                <span class="menu-item">Главная страница</span>
+            </a>
+            <a href="devices.html">
+                <div class="circle"><img src="icons/devices.svg" class="menu-icon"></div>
+                <span class="menu-item">Устройства</span>
+            </a>
+            <a href="targets.html">
+                <div class="circle"><img src="icons/targets.svg" class="menu-icon"></div>
+                <span class="menu-item">Мишени</span>
+            </a>
+            <a href="users.html">
+                <div class="circle"><img src="icons/users_mini.svg" class="menu-icon"></div>
+                <span class="menu-item">Пользователи</span>
+            </a>
+            <a href="exercises.html">
+                <div class="circle"><img src="icons/exercises.svg" class="menu-icon"></div>
+                <span class="menu-item">Упражнения</span>
+            </a>
+            <a href="contours.html">
+                <div class="circle"><img src="icons/contours.svg" class="menu-icon"></div>
+                <span class="menu-item">Контуры</span>
+            </a>
+            <a href="archive.html">
+                <div class="circle"><img src="icons/archive_folders.svg" class="menu-icon"></div>
+                <span class="menu-item">Архив результатов</span>
+            </a>
+            <a href="shooting.html">
+                <div class="circle"><img src="icons/mini-gun.svg" class="menu-icon"></div>
+                <span class="menu-item">Стрельбы</span>
+            </a>
+            <a href="directions.html">
+                <div class="circle"><img src="icons/directions.svg" class="menu-icon"></div>
+                <span class="menu-item">Направления</span>
+            </a>
+            <a href="personal-account-admin.html">
+                <div class="circle active"><img src="icons/personal-account-active.svg" class="menu-icon"></div>
+                <span class="menu-item">Личный кабинет</span>
+            </a>
+            <a href="#"><i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i><span class="go-out menu-item">Выйти</span></a>
+            <a href="#" id="collapse"><i class="fa-solid fa-chevron-left fa-2x"></i><span class="menu-item">Свернуть</span></a>
+        </aside>
+        <section class="main-block personal-account">
+            <h2>Личный кабинет</h2>
+            <div class="photo-block">
+                <div class="user-photo">
+                    <img src="icons/user-photo.svg">
+                </div>
+                <button type="button" id="add-photo">Загрузить фото</button>
+            </div>
+            <div class="user-data">
+                <h2>Данные профиля</h2>
+                <form>
+                    <div class="user-nickname">
+                        <label for="userNickname">ИМЯ ПОЛЬЗОВАТЕЛЯ</label>
+                        <input type="text" name="nickname" id="userNickname" placeholder="UserName">
+                    </div>
+                    <div class="user-name">
+                        <label for="userName">ФИО</label>
+                        <input type="text" name="name" id="userName" placeholder="User Name Text">
+                    </div>
+                    <div class="user-email">
+                        <label for="userEmail">EMAIL</label>
+                        <input type="email" name="email" id="userEmail" placeholder="username@gmail.com">
+                    </div>
+                    <div class="user-position">
+                        <label for="userPosition">ДОЛЖНОСТЬ</label>
+                        <input type="text" name="position" id="userPosition" placeholder="Администратор">
+                    </div>
+                    <div class="user-role">
+                        <label for="userRole">РОЛЬ</label>
+                        <select name="role" id="userRole">
+                            <option value="administrator">Администратор</option>
+                            <option value="manager">Менеджер</option>
+                            <option value="user">Пользователь</option>
+                        </select>
+                    </div>
+                    <input type="submit" id="userSubmit" value="Сохранить">
+                </form>
+            </div>
+            <div class="user-password">
+                <h2>Пароль</h2>
+                <a href="#" class="password-btn"><span>Изменить пароль</span></a>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

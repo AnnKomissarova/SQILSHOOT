@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/awesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="#" class="logo"><img src="icons/TIR.svg"></a>
+            <div class="header-right">
+                <a href="">UserName</a>
+                <a href="">
+                    <div class="avatar"><img src=""></div>
+                </a>
+                <a href="">RU</a>
+                <img src="icons/language-arrow.svg" alt="" class="language">
+            </div>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <a href="index.html">
+                <div class="circle"><img src="icons/main.svg" class="menu-icon"></div>
+                <span class="menu-item">Главная страница</span>
+            </a>
+            <a href="devices.html">
+                <div class="circle"><img src="icons/devices.svg" class="menu-icon"></div>
+                <span class="menu-item">Устройства</span>
+            </a>
+            <a href="targets.html">
+                <div class="circle"><img src="icons/targets.svg" class="menu-icon"></div>
+                <span class="menu-item">Мишени</span>
+            </a>
+            <a href="users.html">
+                <div class="circle active"><img src="icons/users-active.svg" class="menu-icon"></div>
+                <span class="menu-item">Пользователи</span>
+            </a>
+            <a href="exercises.html">
+                <div class="circle"><img src="icons/exercises.svg" class="menu-icon"></div>
+                <span class="menu-item">Упражнения</span>
+            </a>
+            <a href="contours.html">
+                <div class="circle"><img src="icons/contours.svg" class="menu-icon"></div>
+                <span class="menu-item">Контуры</span>
+            </a>
+            <a href="archive.html">
+                <div class="circle"><img src="icons/archive_folders.svg" class="menu-icon"></div>
+                <span class="menu-item">Архив результатов</span>
+            </a>
+            <a href="shooting.html">
+                <div class="circle"><img src="icons/mini-gun.svg" class="menu-icon"></div>
+                <span class="menu-item">Стрельбы</span>
+            </a>
+            <a href="directions.html">
+                <div class="circle"><img src="icons/directions.svg" class="menu-icon"></div>
+                <span class="menu-item">Направления</span>
+            </a>
+            <a href="personal-account-admin.html">
+                <div class="circle"><img src="icons/personal-account.svg" class="menu-icon"></div>
+                <span class="menu-item">Личный кабинет</span>
+            </a>
+            <a href="#"><i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i><span
+                    class="go-out menu-item">Выйти</span></a>
+            <a href="#" id="collapse"><i class="fa-solid fa-chevron-left fa-2x"></i><span
+                    class="menu-item">Свернуть</span></a>
+        </aside>
+        <section class="main-block">
+            <h2>Пользователи</h2>
+            <div class="users-nav">
+                <ul class="container nav">
+                    <li>
+                        <div class="users-search">
+                            <input type="search" id="search-input" placeholder="Поиск">
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" id="delete-user">Удалить</button>
+                    </li>
+                    <li>
+                        <a href="users-adding.html"><span>Добавить пользователя</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="users-table table-wrapper">
+                <table>
+                    <col class="column-one">
+                    <col class="column-two">
+                    <col class="column-three">
+                    <col class="column-four">
+                    <col class="column-five">
+                    <thead>
+                        <tr>
+                            <th class="check">
+                                <div>
+                                    <input type="checkbox" id="allUsers" name="allUsers">
+                                    <label for="allUsers"></label>
+                                </div>
+                            </th>
+                            <th>ФИО</th>
+                            <th>Должность</th>
+                            <th>Роль</th>
+                            <th> </th>
+                        </tr>
+                        <tr>
+                            <td class="check">
+                                <div>
+                                    <input type="checkbox" id="user" name="user">
+                                    <label for="user"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-data">
+                                    <div class="table-photo">
+                                        <img src="icons/personal-account-active.svg">
+                                    </div>
+                                    <span>Участник</span>
+                                </div>
+                            </td>
+                            <td>Участник</td>
+                            <td><span class="user">Пользователь</span></td>
+                            <td class="users-edit-link">
+                                <a href="users-editing.html">
+                                    <img src="icons/edit.svg">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" id="user" name="user">
+                                    <label for="user"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-data">
+                                    <div class="table-photo">
+                                        <img src="icons/personal-account-active.svg">
+                                    </div>
+                                    <span>Администратор</span>
+                                </div>
+                            </td>
+                            <td>Администратор</td>
+                            <td><span class="admin">Администратор</span></td>
+                            <td class="users-edit-link">
+                                <a href="users-editing.html">
+                                <img src="icons/edit.svg">
+                            </a>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" id="user" name="user">
+                                    <label for="user"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-data">
+                                    <div class="table-photo">
+                                        <img src="icons/personal-account-active.svg">
+                                    </div>
+                                    <span>Судья</span>
+                                </div>
+                            </td>
+                            <td>Менеджер</td>
+                            <td><span class="manager">Менеджер</span></td>
+                            <td class="users-edit-link">
+                                <a href="users-editing.html">
+                                    <img src="icons/edit.svg">
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/awesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="#" class="logo"><img src="icons/TIR.svg"></a>
+            <div class="header-right">
+                <a href="">UserName</a>
+                <a href="">
+                    <div class="avatar"><img src=""></div>
+                </a>
+                <a href="">RU</a>
+                <img src="icons/language-arrow.svg" alt="" class="language">
+            </div>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <a href="index.html">
+                <div class="circle"><img src="icons/main.svg" class="menu-icon"></div>
+                <span class="menu-item">Главная страница</span>
+            </a>
+            <a href="devices.html">
+                <div class="circle active"><img src="icons/devices-active.svg" class="menu-icon"></div>
+                <span class="menu-item">Устройства</span>
+            </a>
+            <a href="targets.html">
+                <div class="circle"><img src="icons/targets.svg" class="menu-icon"></div>
+                <span class="menu-item">Мишени</span>
+            </a>
+            <a href="users.html">
+                <div class="circle"><img src="icons/users_mini.svg" class="menu-icon"></div>
+                <span class="menu-item">Пользователи</span>
+            </a>
+            <a href="exercises.html">
+                <div class="circle"><img src="icons/exercises.svg" class="menu-icon"></div>
+                <span class="menu-item">Упражнения</span>
+            </a>
+            <a href="contours.html">
+                <div class="circle"><img src="icons/contours.svg" class="menu-icon"></div>
+                <span class="menu-item">Контуры</span>
+            </a>
+            <a href="archive.html">
+                <div class="circle"><img src="icons/archive_folders.svg" class="menu-icon"></div>
+                <span class="menu-item">Архив результатов</span>
+            </a>
+            <a href="shooting.html">
+                <div class="circle"><img src="icons/mini-gun.svg" class="menu-icon"></div>
+                <span class="menu-item">Стрельбы</span>
+            </a>
+            <a href="directions.html">
+                <div class="circle"><img src="icons/directions.svg" class="menu-icon"></div>
+                <span class="menu-item">Направления</span>
+            </a>
+            <a href="personal-account-admin.html">
+                <div class="circle"><img src="icons/personal-account.svg" class="menu-icon"></div>
+                <span class="menu-item">Личный кабинет</span>
+            </a>
+            <a href="#"><i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i><span
+                    class="go-out menu-item">Выйти</span></a>
+            <a href="#" id="collapse"><i class="fa-solid fa-chevron-left fa-2x"></i><span
+                    class="menu-item">Свернуть</span></a>
+        </aside>
+        <section class="main-block personal-account">
+            <div class="menu-tab">
+                <span>Устройства</span>
+                <img src="icons/menu-arrow.svg">
+            </div>
+            <h2>Редактирование</h2>
+            <div class="device-data">
+                <form>
+                   <div class="devices-row1">
+                    <div class="device-name">
+                        <label for="deviceName">ИМЯ УСТРОЙСТВА</label>
+                        <input type="text" name="name" id="deviceName" placeholder="Устройство">
+                    </div>
+                    <div class="device-link">
+                        <label for="deviceLink">ССЫЛКА</label>
+                        <input type="text" name="link" id="deviceLink" placeholder="http://">
+                    </div>
+                   </div>
+                <div class="devices-row2">
+                    <div class="device-shot">
+                        <label for="deviceShot">РЕЖИМ</label>
+                        <select name="shot" id="deviceShot">
+                            <option value="shot">Поиск одного выстрела</option>
+                            <option value="shot">2</option>
+                            <option value="shot">3</option>
+                        </select>
+                    </div>
+                    <div class="device-target">
+                        <p>КОЛИЧЕСТВО МИШЕНЕЙ</p>
+                        <input type="radio" name="target" id="target1" value="target1">
+                        <label for="target1">1 Мишень</label>
+                        <input type="radio" name="target" id="target2" value="target2">
+                        <label for="target2">2 Мишени</label>
+                    </div>
+                </div>
+                 <div class="devices-rng">
+                    <div class="device-frames">
+                        <label for="deviceFrames">УРОВЕНЬ РАЗНИЦЫ КАДРОВ</label>
+                        <input id="frame-num" type="number" min="0" max="1" step="0.1" value="0">
+                       <div class="range_container">
+                        <input id="frame-range" class="range" type="range" min="0" max="1" step="0.1" value="0">
+                       </div>
+                    </div>
+                    <div class="device-sides">
+                        <label for="deviceName">СООТНОШЕНИЕ СТОРОН</label>
+                        <input id="side-num" type="number" min="0" max="1" step="0.1" value="0">
+                        <input id="side-range" class="range" type="range" min="0" max="1" step="0.1" value="0">
+                    </div>
+                 </div>
+                    <input type="submit" id="deviceSubmit" value="Сохранить">
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
