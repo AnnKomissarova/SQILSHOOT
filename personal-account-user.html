@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <span class="body-overlay"></span>
     <header>
         <div class="header">
             <a href="#" class="logo"><img src="icons/TIR.svg"></a>
@@ -21,6 +22,18 @@
                 </a>
                 <a href="">RU</a>
                 <img src="icons/language-arrow.svg" alt="" class="language">
+            </div>
+            <div class="mini-user-menu">
+                <a href="personal-account-admin.html">
+                    <div class="circle"><img src="icons/personal-account.svg"></div>
+                    <span>Личный кабинет</span>
+                </a>
+                <a href="#"><img src="icons/exit.svg" >
+                    <span class="go-out">Выйти</span></a>
+            </div>
+            <div class="language-menu">
+                <span>RU</span>
+                <span>EN</span>
             </div>
     </header>
     <main>
@@ -98,7 +111,7 @@
                         <input type="text" readonly class="user-account" name="position" id="userPosition"
                             placeholder="Администратор">
                     </div>
-                    <input type="submit" id="userSubmit" value="Сохранить">
+                    <input type="submit" id="userSubmit" class="save-password" value="Сохранить">
                 </form>
             </div>
             <div class="user-password">
@@ -106,7 +119,30 @@
                 <a href="#" class="password-btn"><span>Изменить пароль</span></a>
             </div>
         </section>
+        <div class="password-modal">
+            <form class="password-form">
+                <i class="fa-regular fa-circle-xmark fa-3x close-modal"></i>
+                <h2>Изменить пароль</h2>
+                <p>
+                    <label for="oldPassword">Введите ваш старый пароль </label>
+                    <input type="password" name="name" id="oldPassword" required
+                        placeholder="Введите пароль"><span></span>
+                </p>
+                <p>
+                    <label for="newPassword">Введите ваш новый пароль </label>
+                    <input type="password" name="name" id="newPassword" required
+                        placeholder="Введите пароль"><span></span>
+                </p>
+                <p>
+                    <label for="newPasswordCheck">Повторите новый пароль </label>
+                    <input type="password" name="name" id="newPasswordCheck" required
+                        placeholder="Повторите пароль"><span></span>
+                </p>
+                <input type="submit" id="userSubmit" class="save-password" value="Сохранить">
+            </form>
+        </div>
     </main>
+    <script src="scripts/password-modal.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 

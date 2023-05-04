@@ -1,5 +1,3 @@
-const bodyOverlay = document.querySelector(".body-overlay");
-const body = document.querySelector("body");
 const collapseBtn = document.querySelector("#collapse");
 const menuItems = document.querySelectorAll(".sidebar span");
 const menuLinks = document.querySelectorAll(".sidebar a");
@@ -35,22 +33,3 @@ collapseBtn.addEventListener("click", function(event) {
 //   languageMenu.classList.remove('expand');
 // });
 
-// const numFrame = document.getElementById('frame-num');
-// const rngFrame = document.getElementById('frame-range');
-// const numSide = document.getElementById('side-num');
-// const rngSide = document.getElementById('side-range');
-
-// const setFrame = val => {
-//   numFrame.value = val;
-//   rngFrame.value = val;
-// }
-
-// const setSide = val => {
-//   numSide.value = val;
-//   rngSide.value = val;
-// }
-
-// rngFrame.addEventListener('input', () => setFrame(rngFrame.value));
-// numFrame.addEventListener('change', () => setFrame(numFrame.value));
-// rngSide.addEventListener('input', () => setSide(rngSide.value));
-// numSide.addEventListener('change', () => setSide(numSide.value));

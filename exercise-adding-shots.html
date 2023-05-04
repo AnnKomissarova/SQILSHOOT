@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/awesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="#" class="logo"><img src="icons/TIR.svg"></a>
+            <div class="header-right">
+                <a href="">UserName</a>
+                <a href="">
+                    <div class="avatar"><img src=""></div>
+                </a>
+                <a href="">RU</a>
+                <img src="icons/language-arrow.svg" alt="" class="language">
+            </div>
+            <div class="mini-user-menu">
+                <a href="personal-account-admin.html">
+                    <div class="circle"><img src="icons/personal-account.svg"></div>
+                    <span>Личный кабинет</span>
+                </a>
+                <a href="#"><img src="icons/exit.svg" >
+                    <span class="go-out">Выйти</span></a>
+            </div>
+            <div class="language-menu">
+                <span>RU</span>
+                <span>EN</span>
+            </div>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <a href="index.html">
+                <div class="circle"><img src="icons/main.svg" class="menu-icon"></div>
+                <span class="menu-item">Главная страница</span>
+            </a>
+            <a href="devices.html">
+                <div class="circle"><img src="icons/devices.svg" class="menu-icon"></div>
+                <span class="menu-item">Устройства</span>
+            </a>
+            <a href="targets.html">
+                <div class="circle"><img src="icons/targets.svg" class="menu-icon"></div>
+                <span class="menu-item">Мишени</span>
+            </a>
+            <a href="users.html">
+                <div class="circle"><img src="icons/users.svg" class="menu-icon"></div>
+                <span class="menu-item">Пользователи</span>
+            </a>
+            <a href="exercises.html">
+                <div class="circle active"><img src="icons/exercises-active.svg" class="menu-icon"></div>
+                <span class="menu-item">Упражнения</span>
+            </a>
+            <a href="contours.html">
+                <div class="circle"><img src="icons/contours.svg" class="menu-icon"></div>
+                <span class="menu-item">Контуры</span>
+            </a>
+            <a href="archive.html">
+                <div class="circle"><img src="icons/archive_folders.svg" class="menu-icon"></div>
+                <span class="menu-item">Архив результатов</span>
+            </a>
+            <a href="shooting.html">
+                <div class="circle"><img src="icons/mini-gun.svg" class="menu-icon"></div>
+                <span class="menu-item">Стрельбы</span>
+            </a>
+            <a href="directions.html">
+                <div class="circle"><img src="icons/directions.svg" class="menu-icon"></div>
+                <span class="menu-item">Направления</span>
+            </a>
+            <a href="personal-account-admin.html">
+                <div class="circle"><img src="icons/personal-account.svg" class="menu-icon"></div>
+                <span class="menu-item">Личный кабинет</span>
+            </a>
+            <a href="#"><img src="icons/exit.svg"><span class="go-out menu-item">Выйти</span></a>
+            <a href="#" id="collapse"><i class="fa-solid fa-chevron-left fa-2x"></i><span class="menu-item">Свернуть</span></a>
+        </aside>
+        <section class="main-block">
+            <div class="menu-tab">
+                <span>Упражнения</span>
+                <img src="icons/menu-arrow.svg">
+            </div>
+            <h2>Добавление упражнения</h2>
+            <div class="shooting-data">
+                <form>
+                    <div class="shot-name">
+                        <label for="shotName">ИМЯ УПРАЖНЕНИЯ</label><br>
+                        <input type="text" name="name" id="shotName" placeholder="Имя упражнения">
+                    </div>
+                    <div class="time-name">
+                        <label for="timeName">ВРЕМЯ НА УПРАЖНЕНИЕ В СЕК (НЕОБЯЗАТЕЛЬНО)</label><br>
+                        <input type="text" name="name" id="timeName" placeholder="Время в секундах">
+                    </div>
+                    <div class="shooting-type">
+                        <p>ТИП ПОДСЧЕТА</p>
+                        <input type="radio" name="type" id="shots" value="shots">
+                        <label for="shots"> По количеству выстрелов</label><br>
+                        <input type="radio" name="type" id="hits" value="hits">
+                        <label for="hits">По количеству попаданий</label>
+                    </div>
+                    <div class="shooting-target">
+                        <p>КОЛИЧЕСТВО МИШЕНЕЙ</p>
+                        <input type="radio" name="target" id="shooting-target1" value="shooting-target1">
+                        <label for="shooting-target1" class="shooting-target1">1 Мишень</label>
+                        <input type="radio" name="target" id="shooting-target2" value="shooting-target2">
+                        <label for="shooting-target2">2 Мишени</label>
+                    </div>
+                    <div class="shooting-method">
+                        <p>МЕТОД ПОДСЧЕТА ВЫСТРЕЛОВ</p>
+                        <input type="radio" name="method" id="shooting-method1" value="shooting-method1">
+                        <label for="shooting-method1" class="shooting-method1">Раздельно</label>
+                        <input type="radio" name="method" id="shooting-method2" value="shooting-method2">
+                        <label for="shooting-method2">Вместе (с заложником)</label>
+                    </div>
+                    <div class="shooting-targets-block">
+                        <div class="shooting-targets-item">
+                            <h3>Мишень 1</h3>
+                            <div class="shooting-target1-select">
+                                <label for="shootingTarget1">МИШЕНЬ</label><br>
+                                <select name="shot" id="shootingTarget1">
+                                    <option value="target" disabled selected style='display:none;'>Выберите мишень</option>
+                                    <option value="target">1</option>
+                                    <option value="target">2</option>
+                                    <option value="target">3</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="shotsNumber1">КОЛИЧЕСТВО ВЫСТРЕЛОВ</label><br>
+                                <input type="number" name="name" id="shotsNumber1" placeholder="Число выстрелов" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="shooting-targets-item">
+                            <h3>Мишень 2</h3>
+                            <div class="shooting-target2-select">
+                                <label for="shootingTarget2">МИШЕНЬ</label><br>
+                                <select name="shot" id="shootingTarget2">
+                                    <option value="target" disabled selected style='display:none;'>Выберите мишень</option>
+                                    <option value="target">1</option>
+                                    <option value="target">2</option>
+                                    <option value="target">3</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="shotsNumber2">КОЛИЧЕСТВО ВЫСТРЕЛОВ</label><br>
+                                <input type="number" name="name" id="shotsNumber2" placeholder="Число выстрелов" min="0" step="1">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="grades-block">
+                        <label for="grades">МИНИМАЛЬНАЯ  И МАКСИМАЛЬНАЯ ОЦЕНКИ</label><br>
+                        <input type="number" name="name" id="grades" placeholder="Число" min="0" step="1"> 
+                        <span>-</span>
+                        <input type="number" name="name" id="grades" placeholder="Число" min="0" step="1">
+                    </div>
+                    <input type="submit" id="shotSubmit" value="Сохранить">
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

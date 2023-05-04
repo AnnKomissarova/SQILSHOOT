@@ -39,7 +39,7 @@
         <aside class="sidebar">
             <a href="index.html">
                 <div class="circle"><img src="icons/main.svg" class="menu-icon"></div>
-                <span class="menu-item">Главная страница</span>
+                <span  class="menu-item">Главная страница</span>
             </a>
             <a href="devices.html">
                 <div class="circle"><img src="icons/devices.svg" class="menu-icon"></div>
@@ -50,7 +50,7 @@
                 <span class="menu-item">Мишени</span>
             </a>
             <a href="users.html">
-                <div class="circle"><img src="icons/users.svg" class="menu-icon"></div>
+                <div class="circle"><img src="icons/users_mini.svg" class="menu-icon"></div>
                 <span class="menu-item">Пользователи</span>
             </a>
             <a href="exercises.html">
@@ -62,11 +62,11 @@
                 <span class="menu-item">Контуры</span>
             </a>
             <a href="archive.html">
-                <div class="circle"><img src="icons/archive_folders.svg" class="menu-icon"></div>
+                <div class="circle active"><img src="icons/archive_folders-active.svg" class="menu-icon"></div>
                 <span class="menu-item">Архив результатов</span>
             </a>
             <a href="shooting.html">
-                <div class="circle  active"><img src="icons/mini-gun-active.svg" class="menu-icon"></div>
+                <div class="circle"><img src="icons/mini-gun.svg" class="menu-icon"></div>
                 <span class="menu-item">Стрельбы</span>
             </a>
             <a href="directions.html">
@@ -81,14 +81,73 @@
             <a href="#" id="collapse"><i class="fa-solid fa-chevron-left fa-2x"></i><span class="menu-item">Свернуть</span></a>
         </aside>
         <section class="main-block">
-            <h2>Стрельбы</h2>
-            <div class="shooting-block">
-                <p>
-                    Страница недоступна.
-                </p>
-                <p>
-                    Ведется смена со страницы “Тестовая стрельба”.</p>
-                <a href="test-shooting.html"><span>Перейти на “Тестовая стрельба”</span></a>
+            <div class="menu-tab">
+                <span>Архив результатов</span>
+                <img src="icons/menu-arrow.svg">
+            </div>
+            <div class="archive-head">
+                <h2>Архив за <span>date</span></h2>
+            <a href="#" download="" class="download-btn"><img src="icons/download.svg"><span>Скачать в PDF</span></a>
+            </div>
+            <div class="archive-nav">
+                <ul class="container nav">
+                    <li>
+                        <div class="archive-search">
+                            <input type="search" id="search-input" placeholder="Поиск">
+                        </div>
+                    </li>
+                    <div class="trial-shift">
+                        <input type="checkbox" id="trial-shift" name="trial-shift">
+                        <label for="trial-shift"></label>
+                        <span>Пробные смены</span>
+                    </div>
+                    <div class="real-shift"> 
+                        <input type="checkbox" id="real-shift" name="real-shift">
+                        <label for="real-shift"></label>
+                        <span>Реальные смены</span>
+                    </div>
+                </ul>
+            </div>
+            <div class="date-archive-table table-wrapper">
+                <table>
+                    <col class="column-one">
+                    <col class="column-two">
+                    <col class="column-three">
+                    <col class="column-four">
+                    <col class="column-five">
+                    <thead>
+                        <tr>
+                            <th>Время 
+                                <img src="icons/sort.svg">
+                            </th>
+                            <th>Аттестуемый</th>
+                            <th>Упражнение</th>
+                            <th>Результат</th>
+                            <th>Последнее обновление</th>
+                        </tr>
+                        <tr>
+                            <td>15:45</td>
+                            <td>julia</td>
+                            <td>Упражнение с заложником</td>
+                            <td>Нет данных</td>
+                            <td>25.06.2020 - 15:45</td>
+                        </tr>
+                        <tr>
+                            <td>16:25</td>
+                            <td>Afanasiy</td>
+                            <td>Упражнение с заложником</td>
+                            <td>1</td>
+                            <td>25.06.2020 - 14:25</td>
+                        </tr>
+                        <tr>
+                            <td>05:48</td>
+                            <td>Eugen</td>
+                            <td>Упражнение с заложником</td>
+                            <td>5</td>
+                            <td>25.06.2020 - 12:48</td>
+                        </tr>
+                        </tbody>
+                </table>
             </div>
         </section>
     </main>

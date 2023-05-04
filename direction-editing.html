@@ -50,7 +50,7 @@
                 <span class="menu-item">Мишени</span>
             </a>
             <a href="users.html">
-                <div class="circle"><img src="icons/users.svg" class="menu-icon"></div>
+                <div class="circle"><img src="icons/users_mini.svg" class="menu-icon"></div>
                 <span class="menu-item">Пользователи</span>
             </a>
             <a href="exercises.html">
@@ -66,11 +66,11 @@
                 <span class="menu-item">Архив результатов</span>
             </a>
             <a href="shooting.html">
-                <div class="circle  active"><img src="icons/mini-gun-active.svg" class="menu-icon"></div>
-                <span class="menu-item">Стрельбы</span>
+                <div class="circle"><img src="icons/mini-gun.svg" class="menu-icon"></div>
+                <span class="menu-item">Стрельба</span>
             </a>
             <a href="directions.html">
-                <div class="circle"><img src="icons/directions.svg" class="menu-icon"></div>
+                <div class="circle active"><img src="icons/directions-active.svg" class="menu-icon"></div>
                 <span class="menu-item">Направления</span>
             </a>
             <a href="personal-account-admin.html">
@@ -81,14 +81,53 @@
             <a href="#" id="collapse"><i class="fa-solid fa-chevron-left fa-2x"></i><span class="menu-item">Свернуть</span></a>
         </aside>
         <section class="main-block">
-            <h2>Стрельбы</h2>
-            <div class="shooting-block">
-                <p>
-                    Страница недоступна.
-                </p>
-                <p>
-                    Ведется смена со страницы “Тестовая стрельба”.</p>
-                <a href="test-shooting.html"><span>Перейти на “Тестовая стрельба”</span></a>
+            <div class="menu-tab">
+                <span>Направления</span>
+                <img src="icons/menu-arrow.svg">
+            </div>
+            <h2>Редактирование направления</h2>
+            <div class="direction-data">
+                <form>                    
+                     <div class="direction-name">
+                         <label for="directionName">ИМЯ НАПРАВЛЕНИЯ</label>
+                         <input type="text" name="name" id="directionName" placeholder="Направление">
+                     </div>
+                    <div class="device-edit-block">
+                        <h3>Управление устройствами</h3>
+                        <div class="control-block">                           
+                        <div class="device-item">
+                            <h4>Устройство №1</h4>
+                            <img src="icons/delete.svg">
+                        </div>
+                        <div class="device-select">                            
+                         <label for="deviceItemName">ИМЯ УСТРОЙСТВА</label><br>
+                         <select name="shot" id="deviceItemName">
+                             <option value="device-item0" disabled selected style='display:none;'>Выберите устройство</option>
+                             <option value="device-item1">1</option>
+                             <option value="device-item2">2</option>
+                             <option value="device-item3">3</option>
+                         </select><br>
+                         <label for="deviceTarger1">МИШЕНЬ №1</label><br>
+                         <select name="shot" id="deviceTarger1">
+                             <option value="device-target1-0" disabled selected style='display:none;'>Выберите мишень</option>
+                             <option value="device-target1-1">1</option>
+                             <option value="device-target1-2">2</option>
+                             <option value="device-target1-3">3</option>
+                         </select><br>
+                         <label for="deviceTarger2">МИШЕНЬ №2</label><br>
+                         <select name="shot" id="deviceTarger2">
+                             <option value="device-target2-0" disabled selected style='display:none;'>Выберите мишень</option>
+                             <option value="device-target2-1">1</option>
+                             <option value="device-target2-2">2</option>
+                             <option value="device-target2-3">3</option>
+                         </select>
+                         <img src="icons/delete.svg">
+                        </div> 
+                        </div>
+                    </div>
+                         <button><img src="">Добавить устройство</button>    
+                     <input type="submit" id="deviceSubmit" value="Сохранить">
+                 </form>
             </div>
         </section>
     </main>

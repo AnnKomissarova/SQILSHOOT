@@ -54,7 +54,7 @@
                 <span class="menu-item">Пользователи</span>
             </a>
             <a href="exercises.html">
-                <div class="circle"><img src="icons/exercises.svg" class="menu-icon"></div>
+                <div class="circle active"><img src="icons/exercises-active.svg" class="menu-icon"></div>
                 <span class="menu-item">Упражнения</span>
             </a>
             <a href="contours.html">
@@ -66,7 +66,7 @@
                 <span class="menu-item">Архив результатов</span>
             </a>
             <a href="shooting.html">
-                <div class="circle  active"><img src="icons/mini-gun-active.svg" class="menu-icon"></div>
+                <div class="circle"><img src="icons/mini-gun.svg" class="menu-icon"></div>
                 <span class="menu-item">Стрельбы</span>
             </a>
             <a href="directions.html">
@@ -81,18 +81,34 @@
             <a href="#" id="collapse"><i class="fa-solid fa-chevron-left fa-2x"></i><span class="menu-item">Свернуть</span></a>
         </aside>
         <section class="main-block">
-            <h2>Стрельбы</h2>
-            <div class="shooting-block">
-                <p>
-                    Страница недоступна.
-                </p>
-                <p>
-                    Ведется смена со страницы “Тестовая стрельба”.</p>
-                <a href="test-shooting.html"><span>Перейти на “Тестовая стрельба”</span></a>
+            <div class="menu-tab">
+                <span>Упражнения</span>
+                <img src="icons/menu-arrow.svg">
             </div>
+            <h2>Добавление упражнения</h2>
+            <div class="shooting-data">
+                <form>
+                    <div class="shot-name">
+                        <label for="shotName">ИМЯ УПРАЖНЕНИЯ</label><br>
+                        <input type="text" name="name" id="shotName" placeholder="Имя упражнения">
+                    </div>
+                    <div class="time-name">
+                        <label for="timeName">ВРЕМЯ НА УПРАЖНЕНИЕ В СЕК (НЕОБЯЗАТЕЛЬНО)</label><br>
+                        <input type="text" name="name" id="timeName" placeholder="Время в секундах">
+                    </div>
+                    <div class="shooting-type">
+                        <p>ТИП ПОДСЧЕТА</p>
+                        <input type="radio" name="type" id="shots" value="shots">
+                        <label for="shots">По количеству выстрелов</label><br>
+                        <input type="radio" name="type" id="hits" value="hits">
+                        <label for="hits">По количеству попаданий</label>
+                    </div>
+                    <input type="submit" id="shotSubmit" value="Сохранить">
+                </form>
+            </div>
+
         </section>
     </main>
     <script src="scripts/script.js"></script>
 </body>
-
 </html>
