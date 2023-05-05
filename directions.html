@@ -13,29 +13,94 @@
 <body>
     <header>
         <div class="header">
-            <a href="#" class="logo"><img src="icons/TIR.svg"></a>
+            <a href="index.html" class="logo"><img src="icons/TIR.svg"></a>
             <div class="header-right">
-                <a href="">UserName</a>
+                <a href=""><span class="user-btn">UserName</span></a>
                 <a href="">
                     <div class="avatar"><img src=""></div>
                 </a>
-                <a href="">RU</a>
+                <a href=""><span class="language-btn">RU</span></a>
                 <img src="icons/language-arrow.svg" alt="" class="language">
             </div>
-            <div class="mini-user-menu">
-                <a href="personal-account-admin.html">
-                    <div class="circle"><img src="icons/personal-account.svg"></div>
-                    <span>Личный кабинет</span>
-                </a>
-                <a href="#"><img src="icons/exit.svg" >
-                    <span class="go-out">Выйти</span></a>
-            </div>
-            <div class="language-menu">
-                <span>RU</span>
-                <span>EN</span>
-            </div>
+        </div>
+        <div class="mini-user-menu">
+            <a href="personal-account-admin.html">
+                <div class="circle"><img src="icons/personal-account.svg"></div>
+                <span>Личный кабинет</span>
+            </a>
+            <a href="#"><img src="icons/exit.svg">
+                <span class="go-out">Выйти</span></a>
+        </div>
+        <div class="language-menu">
+            <span>RU</span>
+            <span>EN</span>
+        </div>
     </header>
     <main>
+        <div class="burger-box">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <div class="burger-menu">
+                <div class="burger-header">
+                    <div class="user-burger">
+                        <a href="">
+                            <div class="avatar"><img src=""></div>
+                        </a>
+                        <a href=""><span class="burger-user-btn">UserName</span></a>
+                    </div>
+                    <div class="language-burger"><a href=""><span class="burger-language-btn">RU</span></a>
+                        <img src="icons/language-arrow-black.svg" alt="">
+                    </div>
+                </div>
+                <div class="pages-links">
+                    <a href="index.html" class="menu-link">
+                        <div class="burger-item"><img src="icons/main.svg" class="menu-icon"></div>
+                        <span class="menu-item">Главная страница</span>
+                    </a>
+                    <a href="devices.html" class="menu-link">
+                        <div class="burger-item"><img src="icons/devices.svg" class="menu-icon"></div>
+                        <span class="menu-item">Устройства</span>
+                    </a>
+                    <a href="targets.html" class="menu-link">
+                        <div class="burger-item"><img src="icons/targets.svg" class="menu-icon"></div>
+                        <span class="menu-item">Мишени</span>
+                    </a>
+                    <a href="users.html" class="menu-link">
+                        <div class="burger-item"><img src="icons/users_mini.svg" class="menu-icon"></div>
+                        <span class="menu-item">Пользователи</span>
+                    </a>
+                    <a href="exercises.html" class="menu-link">
+                        <div class="burger-item"><img src="icons/exercises.svg" class="menu-icon"></div>
+                        <span class="menu-item">Упражнения</span>
+                    </a>
+                    <a href="contours.html" class="menu-link">
+                        <div class="burger-item"><img src="icons/contours.svg" class="menu-icon"></div>
+                        <span class="menu-item">Контуры</span>
+                    </a>
+                    <a href="archive.html" class="menu-link">
+                        <div class="burger-item"><img src="icons/archive_folders.svg" class="menu-icon"></div>
+                        <span class="menu-item">Архив результатов</span>
+                    </a>
+                    <a href="shooting.html" class="menu-link">
+                        <div class="burger-item"><img src="icons/mini-gun.svg" class="menu-icon"></div>
+                        <span class="menu-item">Стрельбы</span>
+                    </a>
+                    <a href="directions.html" class="menu-link">
+                        <div class="burger-item"><img src="icons/directions.svg" class="menu-icon"></div>
+                        <span class="menu-item">Направления</span>
+                    </a>
+                    <hr class="border">
+                    <a href="personal-account-admin.html" class="menu-link burger-user-account">
+                        <div class="burger-item"><img src="icons/personal-account.svg" class="menu-icon"></div>
+                        <span class="menu-item">Личный кабинет</span>
+                    </a>
+                    <a href="#" class="menu-link"><img src="icons/exit.svg"><span
+                            class="go-out menu-item">Выйти</span></a>
+                </div>
+            </div>
+        </div>
         <aside class="sidebar">
             <a href="index.html">
                 <div class="circle"><img src="icons/main.svg" class="menu-icon"></div>
@@ -90,10 +155,12 @@
                         </div>
                     </li>
                     <li>
-                        <button type="button" id="delete-direction">Удалить</button>
+                        <button type="button" id="delete-direction" class="delete-btn-nav">Удалить</button>
+                        <img src="icons/delete-nav.svg" class="delete-icon-nav">
                     </li>
                     <li>
-                        <a href="direction-adding.html"><span>Добавить направление</span></a>
+                        <div class="add-btn-nav"><a href="direction-adding.html"><span>Добавить направление</span></a></div>
+                        <i class="fa-solid fa-plus fa-3x add-icon-nav" onclick="location.href='direction-adding.html'"></i>
                     </li>
                 </ul>
             </div>
@@ -162,6 +229,101 @@
                         </tr>
                         </tbody>
                 </table>
+            </div>
+            <div class="accordeon-block directions-table">
+                <details>
+                    <summary>
+                        <div class="accordeon-header">
+                            <div>
+                                <input type="checkbox" id="direction" name="direction">
+                                <label for="direction"></label>
+                            </div>
+                            <span>Направление 1</span>
+                        </div>
+                    </summary>
+                   <div class="accordeon-information">
+                    <div class="accordeon-row">
+                        <span>Устройство</span>
+                        <span>Устройство 1</span>
+                    </div>
+                    <div class="accordeon-row">
+                        <span>№ Мишени</span>
+                        <span>№ 1</span>
+                    </div>
+                    <div class="accordeon-icons">
+                        <div>
+                            <img src="icons/accordeon-delete.svg">
+                        </div>
+                        <div class="direction-edit-link">
+                            <a href="direction-editing.html">
+                                <img src="icons/edit.svg">
+                            </a>
+                        </div>
+                    </div>
+                   </div>
+                </details>
+                <details>
+                    <summary>
+                        <div class="accordeon-header">
+                            <div>
+                                <input type="checkbox" id="direction" name="direction">
+                                <label for="direction"></label>
+                            </div>
+                            <span>Направление 1</span>
+                        </div>
+                    </summary>
+                   <div class="accordeon-information">
+                    <div class="accordeon-row">
+                        <span>Устройство</span>
+                        <span>Устройство 1</span>
+                    </div>
+                    <div class="accordeon-row">
+                        <span>№ Мишени</span>
+                        <span>№ 1</span>
+                    </div>
+                    <div class="accordeon-icons">
+                        <div>
+                            <img src="icons/accordeon-delete.svg">
+                        </div>
+                        <div class="direction-edit-link">
+                            <a href="direction-editing.html">
+                                <img src="icons/edit.svg">
+                            </a>
+                        </div>
+                    </div>
+                   </div>
+                </details>
+                <details>
+                    <summary>
+                        <div class="accordeon-header">
+                            <div>
+                                <input type="checkbox" id="direction" name="direction">
+                                <label for="direction"></label>
+                            </div>
+                            <span>Направление 1</span>
+                        </div>
+                    </summary>
+                   <div class="accordeon-information">
+                    <div class="accordeon-row">
+                        <span>Устройство</span>
+                        <span>Устройство 1</span>
+                    </div>
+                    <div class="accordeon-row">
+                        <span>№ Мишени</span>
+                        <span>№ 1</span>
+                    </div>
+                    <div class="accordeon-icons">
+                        <div>
+                            <img src="icons/accordeon-delete.svg">
+                        </div>
+                        <div class="direction-edit-link">
+                            <a href="direction-editing.html">
+                                <img src="icons/edit.svg">
+                            </a>
+                        </div>
+                    </div>
+                   </div>
+                </details>
             </div>
         </section>
     </main>
