@@ -17,11 +17,3 @@ rngShot.addEventListener('input', () => setFrame(rngShot.value));
 numShot.addEventListener('change', () => setFrame(numShot.value));
 rngContour.addEventListener('input', () => setSide(rngContour.value));
 numContour.addEventListener('change', () => setSide(numContour.value));
-
-// const slider = document.querySelector('.range');
-// const progress = document.querySelector('.progress');
-
-// slider.oninput = function(){
-//   progress.style.width = `${this.value}px`;
-//   console.log(`${this.value}px`)
-// };

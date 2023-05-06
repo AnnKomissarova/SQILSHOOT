@@ -12,24 +12,3 @@ collapseBtn.addEventListener("click", function(event) {
       }
   });
 
-// const userMenuBtn = document.querySelector(".user-btn");
-// const userMenu = document.querySelector(".mini-user-menu");
-// const languageBtn = document.querySelector(".language-btn");
-// const languageMenu = document.querySelector(".language-menu");
-
-// userMenuBtn.addEventListener('click', function(event) {
-//   event.preventDefault();
-//   userMenu.classList.toggle('expand');
-// });
-
-// languageBtn.addEventListener('click', function(event) {
-//   event.preventDefault();
-//   languageMenu.classList.toggle('expand');
-// });
-
-// main.addEventListener('click', function(event) {
-//   event.preventDefault();
-//   userMenu.classList.remove('expand');
-//   languageMenu.classList.remove('expand');
-// });
-
