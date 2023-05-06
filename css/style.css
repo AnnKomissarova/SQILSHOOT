@@ -37,11 +37,13 @@
 
 html {
   font-size: 16px;
+  height: 100%;
 }
 
 body {
   font-family: 'Roboto';
   text-align: center;
+  height: 100%;
 }
 
 body.with-overlay {
@@ -163,7 +165,7 @@ body.with-overlay {
 }
 
 main {
-  height: calc(100% - 70px);
+  height: 100%;
 }
 
 .sidebar {
@@ -173,10 +175,9 @@ main {
   float: left;
   display: flex;
   flex-direction: column;
-  height: 100%;
   border-right: 1px solid #D6D6D6;
+  height: 100%;
 }
-
 
 .menu-item.collapse {
   display: none;
