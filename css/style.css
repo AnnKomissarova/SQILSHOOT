@@ -209,10 +209,6 @@ main {
   color: black;
 }
 
-.sidebar a:hover .title-active {
-  color: black;
-}
-
 .sidebar i {
   padding-left: 10px;
   color: #757575;
@@ -245,6 +241,10 @@ main {
 
 .sidebar a.active span {
   color: #fff;
+}
+
+.sidebar a.active:hover span {
+  color: black;
 }
 
 .main-block {
