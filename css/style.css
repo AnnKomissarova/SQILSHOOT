@@ -1106,7 +1106,7 @@ details {
   }
 
   .delete-btn-nav,
-  .add-btn-nav {
+  .add-btn-nav a {
     display: none;
   }
 
@@ -2329,7 +2329,6 @@ input:checked+.slider:before {
   .shooting-select div:first-child {
     margin-right: 0;
   }
-
 
 }
 
