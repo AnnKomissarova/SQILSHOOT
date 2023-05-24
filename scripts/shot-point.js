@@ -1,4 +1,4 @@
-const block = document.querySelector('.camera-status');
+const block = document.querySelector('.block');
 var point = document.createElement('div');
 
 block.onclick = function(e) {

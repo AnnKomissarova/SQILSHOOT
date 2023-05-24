@@ -2655,3 +2655,19 @@ input.wrong-input {
     font-size: 0.7rem;
   }
 }
+
+.target-page {
+  overflow: hidden;
+}
+
+.full-target .camera-status{ 
+  width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+  border: 0;
+}
+
+.full-target span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
