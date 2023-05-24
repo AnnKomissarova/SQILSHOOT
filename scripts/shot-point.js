@@ -1,13 +1,10 @@
-const blocks = document.getElementsByClassName('camera-status');
+const block = document.querySelector('.camera-status');
 var point = document.createElement('div');
 
-for (var i = 0; i < blocks.length; i++) {
-    blocks[i].onclick = function (e) {
-        point.className = 'point';
-        point.style.left = e.pageX + 'px';
-        point.style.top = e.pageY + 'px';
-        this.append(point)
-    }
-
+block.onclick = function(e) {
+  var point = document.createElement('div');
+  point.className = 'point';
+  point.style.left = e.pageX + 'px';
+  point.style.top = e.pageY + 'px';
+  block.appendChild(point);
 }
-

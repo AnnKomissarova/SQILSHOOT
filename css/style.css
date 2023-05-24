@@ -2216,12 +2216,16 @@ input:checked+.slider:before {
   color: #8D8D8D;
 }
 
+.camera-status img {
+  width: 100%;
+}
+
 .camera-status .point {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: #000;
-  border-radius: 50%; 
+  background: #EF281C;
+  border-radius: 50%;
 }
 
 .shooting-target:first-child {
@@ -2504,7 +2508,7 @@ input:checked+.slider:before {
   .sign-in-block {
     display: flex;
     flex-direction: column;
-    justify-content: center;   
+    justify-content: center;
     background: #FFFFFF;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
@@ -2528,7 +2532,7 @@ input:checked+.slider:before {
     top: 40px;
   }
 
-  .main-logo img{
+  .main-logo img {
     width: 70px;
   }
 }
@@ -2549,6 +2553,83 @@ input:checked+.slider:before {
     left: 15px;
     top: 15px;
   }
+}
+
+.modal-camera {
+  display: none;
+  position: absolute;
+  top: 186px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 380px;
+  height: 512px;
+  background: #FBFBFB;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.modal-camera div:first-of-type,
+.modal-direction div:first-of-type {
+  padding: 10px 0 20px;
+}
+
+.modal-camera div:nth-of-type(2),
+.modal-camera div:nth-of-type(3),
+.modal-direction div:nth-of-type(2),
+.modal-direction div:nth-of-type(3) {
+  text-align: left;
+}
+
+.modal-camera div:nth-of-type(2),
+.modal-direction div:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+
+.modal-camera .camera-status {
+  width: 350px;
+  height: 350px;
+}
+
+.modal-camera p,
+.modal-direction p {
+  font-size: 1.3125rem;
+  font-weight: 500;
+  width: 207px;
+  margin: 0 auto;
+}
+
+.modal-direction {
+  display: none;
+  position: absolute;
+  top: 186px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 380px;
+  height: 365px;
+  background: #FBFBFB;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.start-shift {
+  margin-top: 30px;
+  font-size: 1rem;
+  width: 220px;
+  height: 50px;
+  background: #ECECEC;
+  border: 2px solid #B2B2B2;
+  border-radius: 25px;
+}
+
+.start-shift:hover {
+  background: #FFC452;
+  border: 2px solid #FFC452;
 }
 
 

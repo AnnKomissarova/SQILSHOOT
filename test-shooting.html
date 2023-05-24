@@ -189,7 +189,8 @@
                                     <div class="shooting-target">
                                         <span>Мишень 1: нет данных</span>
                                         <div class="camera-status">
-                                            <span>КАМЕРА ОТКЛЮЧЕНА</span>
+                                            <!-- <span>КАМЕРА ОТКЛЮЧЕНА</span> -->
+                                            <img src="img/target.png">
                                         </div>
                                     </div>
 
@@ -293,9 +294,38 @@
                         </div>
                     </details>
                 </div>
-
             </div>
         </section>
+        <div class="modal-camera">
+            <i class="fa-regular fa-circle-xmark fa-3x close-modal"></i>
+            <div>
+                <p>Направление 1</p>
+                <p>Мишень 1</p>
+            </div>
+            <div><span>Упражнение:</span><span>не выбрано</span></div>
+            <div><span>Аттестуемый:</span><span>не выбран</span></div>
+            <div class="camera-status">
+                <span>КАМЕРА ОТКЛЮЧЕНА</span>
+            </div>
+        </div>
+
+        <div class="modal-direction">
+            <i class="fa-regular fa-circle-xmark fa-3x close-modal"></i>
+            <div>
+                <p>Не все направления настроены</p>
+            </div>
+            <div>
+                <h4>Направление 1</h4><br>
+                <span>Статус: Выключено</span><br>
+                <span>Не заполнены поля: Упражнение, Аттестуемый</span>
+            </div>
+            <div>
+                <h4>Направление 2</h4><br>
+                <span>Статус: Выключено</span><br>
+                <span>Не заполнены поля: Упражнение, Аттестуемый</span>
+            </div>
+            <button type="button" class="start-shift">Начать смену</button>
+        </div>
     </main>
     <script src="scripts/shot-point.js"></script>
     <script src="scripts/script.js"></script>
