@@ -2668,3 +2668,98 @@ input.wrong-input {
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+
+
+.wrapper-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.result-item {
+  border: 1px solid black;
+  width: 100%;
+  max-width: 320px;
+  height: 320px;
+  padding: 7px;
+  margin: 3px;
+  background: #efeded;
+  font-size: 1.325rem;
+}
+
+.result-item div {
+  display: flex;
+}
+
+.result-item span {
+  background: #a5a2a2;
+  padding: 0 5px;
+  margin: 4px 3px 3px 0;
+  text-transform: uppercase;
+}
+
+.result-item div:first-of-type {
+  width: 100%;
+}
+
+.result-item div:first-of-type img {
+  width: 100%;
+  max-width: 65px;
+  height: 33px;
+  margin-right: 3px;
+}
+
+.result-item div:nth-of-type(3) img {
+  width: 100%;
+  max-width: 185px;
+  height: 185px;
+}
+
+.result-item div:nth-of-type(1)  {
+  justify-content: space-between;
+}
+
+.result-item div:nth-of-type(1) span {
+  width: 100%;
+}
+
+.result-item div:nth-of-type(2) span {
+  width: 100px;
+  text-align: right;
+}
+
+.result-item div:nth-of-type(3) div {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  text-align: right;
+  margin-left: 7px;
+}
+
+.result-item div:nth-of-type(3) {
+  justify-content: space-between;
+  display: flex;
+  padding-right: 5px;
+  align-items: center;
+}
+
+.result-item div:nth-of-type(4) span{
+  padding: 10px;
+  text-align: right;
+  font-size: 1.25rem;
+  font-weight: 600;  
+  width: 100%;
+}
+
+.number {
+  width: 100%;
+  max-width: 50px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.name {
+  text-align: center;
+  font-weight: 600;
+}
