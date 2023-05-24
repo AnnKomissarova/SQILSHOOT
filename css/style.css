@@ -2216,6 +2216,14 @@ input:checked+.slider:before {
   color: #8D8D8D;
 }
 
+.camera-status .point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%; 
+}
+
 .shooting-target:first-child {
   margin-right: 50px;
 }
