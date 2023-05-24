@@ -903,7 +903,7 @@ ul {
   width: 100%;
 }
 
-.nav div{
+.nav div {
   display: flex;
 }
 
@@ -2111,7 +2111,8 @@ input:checked+.slider:before {
   font-size: 0.625rem;
 }
 
-.btns-block, .btns-block-results {
+.btns-block,
+.btns-block-results {
   height: 60px;
   background: #FFF1D7;
   border: 1px solid #FFC452;
@@ -2121,7 +2122,8 @@ input:checked+.slider:before {
   padding: 3px;
 }
 
-.btns-block div, .btns-block-results div {
+.btns-block div,
+.btns-block-results div {
   background: #F2F2F2;
   border: 1px solid #FFC452;
   box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -2354,4 +2356,214 @@ input:checked+.slider:before {
 
 .users-results td {
   padding: 10px 0 10px 15px;
+}
+
+
+.sign-in-body {
+  overflow: hidden;
+}
+
+.main-logo {
+  position: absolute;
+  left: 100px;
+  top: 80px;
+  z-index: 10;
+}
+
+.main-logo img {
+  width: 100px;
+}
+
+.left-triangle {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.left-triangle img {
+  width: 700px;
+}
+
+.right-blue-triangle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+}
+
+.right-blue-triangle img {
+  height: 100vh;
+}
+
+.right--yellow-triangle {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+}
+
+.sign-in-page {
+  background: #F5F5F5;
+}
+
+.sign-in-block {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  width: 100%;
+  max-width: 500px;
+  height: 545px;
+}
+
+.sign-in-block form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in-block form div {
+  margin: 0;
+}
+
+
+.sign-in-block form div:first-child {
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.sign-in-block h2 {
+  font-size: 1.625rem;
+  margin-bottom: 50px;
+}
+
+.sign-in-block form input {
+  width: 350px;
+  font-size: 1.125rem;
+}
+
+.sign-in-block form #user-submit {
+  background: #FFC452;
+  border: 2px solid #FFC452;
+  border-radius: 25px;
+  margin-top: 50px;
+}
+
+.sign-in-block form #user-submit:hover {
+  color: black;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 1250px) {
+  .left-triangle img {
+    width: 500px;
+  }
+
+  .main-logo {
+    left: 40px;
+    top: 60px;
+  }
+
+  .right-blue-triangle img {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .sign-in-block {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .sign-in-block {
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .triangles {
+    display: none;
+  }
+
+  .sign-in-page {
+    background: linear-gradient(to bottom right, #22124E 47.69%, rgba(93, 85, 117, 0.71) 101.1%);
+    box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .main-logo {
+    left: 100px;
+    top: 60px;
+  }
+
+  .sign-in-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    top: 186px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .sign-in-block {
+    top: 150px;
+    width: 400px;
+    height: 440px;
+  }
+
+  .main-logo {
+    left: 65px;
+    top: 40px;
+  }
+
+  .main-logo img{
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sign-in-block {
+    top: 100px;
+    width: 320px;
+    height: 400px;
+  }
+
+  .sign-in-block form input {
+    width: 250px;
+    font-size: 1rem;
+  }
+
+  .main-logo {
+    left: 15px;
+    top: 15px;
+  }
+}
+
+
+/* Стили для неверного ввода данных (при неверном вводе добавить класс .wrong-input
+тегу input и убрать у span display:none */
+
+/* .user-email span, .user-password span {
+  display: none;
+} */
+
+input.wrong-input {
+  border: 1px solid #EF281C;
+  color: #EF281C;
+}
+
+.warning-message {
+  font-size: 0.75rem;
+  color: #EF281C;
+}
+
+@media screen and (max-width: 450px) {
+  .warning-message {
+    font-size: 0.7rem;
+  }
 }
