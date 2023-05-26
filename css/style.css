@@ -998,6 +998,64 @@ table .table-data {
   display: none;
 }
 
+/* Delete-user-modal */
+
+.modal-delete-user.open {
+  display: block;
+}
+
+.modal-delete-user {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 370px;
+  max-height: 180px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  z-index: 10;
+}
+
+.modal-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-delete-user div {
+  margin: 10px 0;
+}
+
+.modal-delete-user .modal-btn {
+  display: flex;
+  align-items: center;
+}
+
+
+.modal-delete-user .modal-btn a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  width: 100px;
+  height: 35px;
+  border-radius: 12px;
+  border: 1px solid #B2B2B2;
+  padding: 5px;
+  font-size: 1.15rem;
+}
+
+.modal-delete-user .modal-btn a:first-of-type {
+  margin-right: 30px;
+}
+
+.modal-delete-user .modal-btn a:hover {
+  background: var(--accent);
+}
 
 /* Accordeon-block */
 
@@ -2656,7 +2714,7 @@ input.wrong-input {
   }
 }
 
-.full-target .camera-status{ 
+.full-target .camera-status {
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
@@ -2716,7 +2774,7 @@ input.wrong-input {
   height: 185px;
 }
 
-.result-item div:nth-of-type(1)  {
+.result-item div:nth-of-type(1) {
   justify-content: space-between;
 }
 
@@ -2744,11 +2802,11 @@ input.wrong-input {
   align-items: center;
 }
 
-.result-item div:nth-of-type(4) span{
+.result-item div:nth-of-type(4) span {
   padding: 10px;
   text-align: right;
   font-size: 1.25rem;
-  font-weight: 600;  
+  font-weight: 600;
   width: 100%;
 }
 

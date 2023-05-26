@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <span class="body-overlay"></span>
     <header>
         <div class="header">
             <a href="index.html" class="logo"><img src="icons/TIR.svg"></a>
@@ -142,8 +143,7 @@
                 <div class="circle"><img src="icons/personal-account.svg" class="menu-icon"></div>
                 <span class="menu-item">Личный кабинет</span>
             </a>
-            <a href="#"><img src="icons/exit.svg"><span
-                    class="go-out menu-item">Выйти</span></a>
+            <a href="#"><img src="icons/exit.svg"><span class="go-out menu-item">Выйти</span></a>
             <a href="#" id="collapse"><i class="fa-solid fa-chevron-left fa-2x"></i><span
                     class="menu-item">Свернуть</span></a>
         </aside>
@@ -162,8 +162,10 @@
                             <img src="icons/delete-nav.svg" class="delete-icon-nav">
                         </li>
                         <li>
-                            <div class="add-btn-nav"><a href="users-adding.html"><span>Добавить пользователя</span></a></div>
-                            <i class="fa-solid fa-plus fa-3x add-icon-nav" onclick="location.href='users-adding.html'"></i>
+                            <div class="add-btn-nav"><a href="users-adding.html"><span>Добавить пользователя</span></a>
+                            </div>
+                            <i class="fa-solid fa-plus fa-3x add-icon-nav"
+                                onclick="location.href='users-adding.html'"></i>
                         </li>
                     </div>
                 </ul>
@@ -230,9 +232,9 @@
                             <td><span class="admin">Администратор</span></td>
                             <td class="users-edit-link">
                                 <a href="users-editing.html">
-                                <img src="icons/edit.svg">
-                            </a>
-                        </td>
+                                    <img src="icons/edit.svg">
+                                </a>
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -277,7 +279,7 @@
                             <span>Судья 1</span>
                         </div>
                     </summary>
-                    <div  class="accordeon-information"> 
+                    <div class="accordeon-information">
                         <div class="accordeon-row">
                             <span>Должность</span>
                             <span>Судья</span>
@@ -313,26 +315,26 @@
                             <span>Администратор</span>
                         </div>
                     </summary>
-                   <div class="accordeon-information">
-                    <div class="accordeon-row">
-                        <span>Должность</span>
-                        <span>Администратор</span>
-                    </div>
-                    <div class="accordeon-row">
-                        <span>Роль</span>
-                        <span class="admin">Администратор</span>
-                    </div>
-                    <div class="accordeon-icons">
-                        <div>
-                            <img src="icons/accordeon-delete.svg">
+                    <div class="accordeon-information">
+                        <div class="accordeon-row">
+                            <span>Должность</span>
+                            <span>Администратор</span>
                         </div>
-                        <div class="users-edit-link">
-                            <a href="users-editing.html">
-                                <img src="icons/edit.svg">
-                            </a>
+                        <div class="accordeon-row">
+                            <span>Роль</span>
+                            <span class="admin">Администратор</span>
+                        </div>
+                        <div class="accordeon-icons">
+                            <div>
+                                <img src="icons/accordeon-delete.svg">
+                            </div>
+                            <div class="users-edit-link">
+                                <a href="users-editing.html">
+                                    <img src="icons/edit.svg">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                   </div>
                 </details>
                 <details>
                     <summary>
@@ -372,7 +374,22 @@
                 </details>
             </div>
         </section>
+        <div class="modal-delete-user">
+           <div class="modal-menu">
+            <div class="modal-header">
+                <h3>Подтверждение удаления</h3>
+            </div>
+            <div>
+                <p>После удаления данные будут утеряны. Продолжить?</p>
+            </div>
+            <div class="modal-btn">
+                <a href="#" class="menu-btn btn-save">Да</a>
+                <a href="#" class="menu-btn btn-close">Нет</a>
+            </div>
+           </div>
+        </div>
     </main>
+    <script src="scripts/delete-user.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 
