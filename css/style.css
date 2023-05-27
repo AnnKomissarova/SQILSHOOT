@@ -1144,7 +1144,8 @@ details {
   .date-archive-table,
   .user-archive-table,
   .shooting-table,
-  .contours-table {
+  .contours-table,
+  .report-table {
     display: none;
   }
 
@@ -1529,6 +1530,10 @@ details {
 .shifts {
   display: flex;
   padding-left: 30px;
+}
+
+.shifts input{
+  margin-right: 10px;
 }
 
 /* User-archive */
@@ -2902,4 +2907,26 @@ input.wrong-input {
 
 .report-table .column-four {
   width: 70px;
+}
+
+@media screen and (max-width: 783px) {
+  .report-search form div {
+    margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 694px) {
+  .report-search form div {
+    margin: 5px;
+  }
+ 
+  .save-report-btn, .report-search form input[type="submit"] {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .report-search form .date-interval {
+    flex-direction: column;
+  }
 }
