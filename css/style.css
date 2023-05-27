@@ -1156,12 +1156,13 @@ details {
     display: block;
   }
 
-  .delete-btn-nav,
+  .delete-btn-nav, 
+  .save-report-btn,  
   .add-btn-nav a {
     display: none;
   }
 
-  .delete-icon-nav,
+  .delete-icon-nav, 
   .add-icon-nav {
     display: block;
     width: 40px;
@@ -2817,4 +2818,88 @@ input.wrong-input {
 .name {
   text-align: center;
   font-weight: 600;
+}
+
+/* Report-page */
+
+.report-search {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.report-search form .report-calendar{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.report-search form {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.report-search form .date-interval {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.report-search form .date-interval i {
+  margin: 0 20px;
+}
+
+.report-search form div {
+  margin: 15px;
+}
+
+.report-search form p {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.report-search form input[type="date"] {
+  width: 160px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid black;
+  font-size: 1rem;
+  padding: 5px 15px;
+}
+
+.save-report-icon {
+  display: none;
+}
+
+.save-report-btn, .report-search form input[type="submit"] {
+  margin: 30px 0 0 20px;
+  width: 200px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 2px solid var(--primary);
+  border-radius: 25px;
+}
+
+.save-report-btn:hover {
+  background: var(--accent);
+  cursor: pointer;
+}
+
+.report-search form input[type="submit"]:hover {
+  background: var(--primary);
+  
+}
+
+.report-table td{
+  padding: 10px 20px;
+}
+
+.report-table td:last-child{
+  padding-left: 30px;
+}
+
+.report-table .column-four {
+  width: 70px;
 }
