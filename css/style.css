@@ -1157,13 +1157,13 @@ details {
     display: block;
   }
 
-  .delete-btn-nav, 
-  .save-report-btn,  
+  .delete-btn-nav,
+  .save-report-btn,
   .add-btn-nav a {
     display: none;
   }
 
-  .delete-icon-nav, 
+  .delete-icon-nav,
   .add-icon-nav {
     display: block;
     width: 40px;
@@ -1532,7 +1532,7 @@ details {
   padding-left: 30px;
 }
 
-.shifts input{
+.shifts input {
   margin-right: 10px;
 }
 
@@ -2833,7 +2833,7 @@ input.wrong-input {
   margin: 0 auto;
 }
 
-.report-search form .report-calendar{
+.report-search form .report-calendar {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -2878,7 +2878,8 @@ input.wrong-input {
   display: none;
 }
 
-.save-report-btn, .report-search form input[type="submit"] {
+.save-report-btn,
+.report-search form input[type="submit"] {
   margin: 30px 0 0 20px;
   width: 200px;
   height: 40px;
@@ -2894,14 +2895,14 @@ input.wrong-input {
 
 .report-search form input[type="submit"]:hover {
   background: var(--primary);
-  
+
 }
 
-.report-table td{
+.report-table td {
   padding: 10px 20px;
 }
 
-.report-table td:last-child{
+.report-table td:last-child {
   padding-left: 30px;
 }
 
@@ -2919,8 +2920,9 @@ input.wrong-input {
   .report-search form div {
     margin: 5px;
   }
- 
-  .save-report-btn, .report-search form input[type="submit"] {
+
+  .save-report-btn,
+  .report-search form input[type="submit"] {
     margin: 5px;
   }
 }
@@ -2929,4 +2931,194 @@ input.wrong-input {
   .report-search form .date-interval {
     flex-direction: column;
   }
+}
+
+
+/* Competit-shooting */
+
+.results-wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #D7D7D7;
+  padding: 7.5px;
+}
+
+.results-item {
+  display: flex;
+  padding: 40px 30px;
+  background: #FFFFFF;
+  width: calc((100%/2) - 15px);
+  margin: 7.5px;
+  justify-content: space-between;
+}
+
+.results-item .camera-status {
+  margin: 0;
+}
+
+.results-information {
+  margin-right: 15px;
+}
+
+.results-item .results-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gunner-data {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #D6D6D6;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+  max-width: 285px;
+}
+
+.gunner-data span:first-of-type {
+  width: 100%;
+  border-bottom: 1px solid #D6D6D6;
+  font-size: 26px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.gunner-data span:nth-of-type(2) {
+  border-right: 1px solid #D6D6D6;
+  width: 65%;
+}
+
+.gunner-data span:last-of-type,
+.gunner-data span:nth-of-type(2) {
+  padding: 15px;
+}
+
+.grades div {
+  display: flex;
+  flex-direction: column;
+}
+
+.grade {
+  max-width: 285px;
+  height: 98px;
+  padding: 15px;
+  border: 1px solid #D6D6D6;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  text-align: left;
+}
+
+.grade span:first-of-type {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.grade span:last-of-type {
+  font-size: 14px;
+}
+
+.great {
+  background: #E7FFE8;
+}
+
+.fine {
+  background: #FDFFE1;
+}
+
+.normal {
+  background: #FFF0E2;
+}
+
+.bad {
+  background: #FFE5E5;
+}
+
+/* Competit-shooting var-2*/
+
+.wrapper-2 {
+  flex-wrap: nowrap;
+  height: 100vh;
+}
+
+.item-2 {
+  flex-direction: column;
+  width: calc((100%/4) - 15px);
+  margin: 2.5px;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.gunner-2 {
+  text-align: center;
+  max-width: 600px;
+  border: 0;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.05)
+}
+
+.gunner-2 span:first-of-type {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.gunner-2 span:nth-of-type(2) {
+  width: 100%;
+  border-bottom: 1px solid #D6D6D6;
+  font-size: 26px;
+  font-weight: 500;
+  padding: 10px;
+  border-right: 0;
+}
+
+.gunner-2 span:nth-of-type(3) {
+  border-right: 1px solid #D6D6D6;
+  width: 65%;
+}
+
+.gunner-2 span:last-of-type,
+.gunner-2 span:nth-of-type(3) {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.gunner-2 {
+  border-bottom: 1px solid #D6D6D6;
+}
+
+.information-2 {
+  margin-right: 0;
+}
+
+.grades-2 .grade {
+  display: flex;
+  justify-content: center;
+  height: 172px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #E0E0E0;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.item-2 .camera-status {
+  margin: 25px auto;
+}
+
+.grades-2 .grade span {
+  margin: 0 auto;
+}
+
+.grades-2 .grade span:first-of-type {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.grades-2 .grade span:last-of-type {
+  font-size: 16px;
+  width: 250px;
 }
