@@ -2232,9 +2232,12 @@ input:checked+.slider:before {
 
 .btns-block button {
   width: 100%;
-  max-width: 115px;
   border-left: 1px solid #FFC452;
   cursor: pointer;
+}
+
+.btns-exercise button {
+  max-width: 115px;
 }
 
 .direction-choice-block summary:after {
