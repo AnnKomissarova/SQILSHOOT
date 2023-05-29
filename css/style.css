@@ -2158,6 +2158,22 @@ input:checked+.slider:before {
   font-size: 1.125rem;
 }
 
+.accordeon-btns {
+  position: absolute;
+  right: 10%;
+}
+
+.accordeon-btns button{
+  width: 150px;
+  height: 40px;
+  background: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 20px;
+  border: 1px solid black;
+}
+
 .direction-choice-block .accordeon-row {
   display: flex;
   /* flex-direction: column; */
