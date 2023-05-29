@@ -194,47 +194,64 @@
                                             <img src="img/target.png">
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="shooting-target">
-                                        <span>Мишень 2: нет данных</span>
-                                        <div class="camera-status">
-                                            <span>КАМЕРА ОТКЛЮЧЕНА</span>
+                                <div class="user-column">
+                                    <div class="shooting-select">
+                                        <div class="exercise-data">
+                                            <label for="userExercise">УПРАЖНЕНИЕ</label><br>
+                                            <select name="exercise" id="userExercise">
+                                                <option value="shooting-exercise-0" disabled selected
+                                                    style='display:none;'>
+                                                    Выберите упражнение</option>
+                                                <option value="shooting-exercise-1">1</option>
+                                                <option value="shooting-exercise-2">2</option>
+                                                <option value="shooting-exercise-3">3</option>
+                                            </select>
                                         </div>
 
+                                        <div class="certified-data">
+                                            <label for="certifiedUser">АТТЕСТУЕМЫЙ</label><br>
+                                            <select name="certified" id="certifiedUser">
+                                                <option value="shooting-user-0" disabled selected style='display:none;'>
+                                                    Выберите
+                                                    аттестуемого</option>
+                                                <option value="shooting-user-1">1</option>
+                                                <option value="shooting-user-2">2</option>
+                                                <option value="shooting-user-3">3</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="shooting-select">
-                                    <div class="exercise-data">
-                                        <label for="userExercise">УПРАЖНЕНИЕ</label><br>
-                                        <select name="exercise" id="userExercise">
-                                            <option value="shooting-exercise-0" disabled selected style='display:none;'>
-                                                Выберите упражнение</option>
-                                            <option value="shooting-exercise-1">1</option>
-                                            <option value="shooting-exercise-2">2</option>
-                                            <option value="shooting-exercise-3">3</option>
-                                        </select>
+                                <div class="result-column">
+                                    <div>
+                                        <label for="result-time">Результат сек.</label><br>
+                                        <input type="number" name="name" id="result-time" placeholder="0" min="0"
+                                            step="1">
                                     </div>
-
-                                    <div class="exercise-data">
-                                        <label for="certifiedUser">АТТЕСТУЕМЫЙ</label><br>
-                                        <select name="certified" id="certifiedUser">
-                                            <option value="shooting-user-0" disabled selected style='display:none;'>
-                                                Выберите
-                                                аттестуемого</option>
-                                            <option value="shooting-user-1">1</option>
-                                            <option value="shooting-user-2">2</option>
-                                            <option value="shooting-user-3">3</option>
+                                    <div>
+                                        <label for="result-hits">Результат кол-во попаданий</label><br>
+                                        <input type="number" name="name" id="result-hits" placeholder="0" min="0"
+                                            step="1">
+                                    </div>
+                                    <div>
+                                        <label for="result-full">Результат</label><br>
+                                        <select name="result-full" id="result-full">
+                                            <option value="result-full-0" disabled selected style='display:none;'>
+                                                Результат</option>
+                                            <option value="result-full-great">Отлично</option>
+                                            <option value="result-full-fine">Хорошо</option>
+                                            <option value="result-full-normal">Удовлетворительно</option>
+                                            <option value="result-full-bad">Недовлетворительно</option>
                                         </select>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </details>
                 </div>
 
-                <div class="direction-wrapper">
+                <!-- <div class="direction-wrapper">
                     <details open>
                         <summary>
                             <div class="accordeon-header">
@@ -294,7 +311,8 @@
                             </div>
                         </div>
                     </details>
-                </div>
+                </div> -->
+
             </div>
         </section>
         <div class="modal-camera">

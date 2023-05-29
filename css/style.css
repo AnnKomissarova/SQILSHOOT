@@ -2142,7 +2142,7 @@ input:checked+.slider:before {
 }
 
 .direction-wrapper {
-  width: 50%;
+  width: 100%;
 }
 
 .direction-wrapper:not(:last-child) {
@@ -2159,9 +2159,40 @@ input:checked+.slider:before {
 }
 
 .direction-choice-block .accordeon-row {
-  justify-content: center;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+}
+
+.direction-choice-block .accordeon-row label {
+  font-size: 1rem;
+}
+
+.user-column {
+  margin-right: 50px;
   display: flex;
   flex-direction: column;
+}
+
+.user-column .exercise-data {
+  margin-bottom: 50px;
+}
+
+.result-column input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 1.25rem;
+}
+
+.result-column div:nth-of-type(2) {
+  margin: 20px 0;
+}
+
+.user-column select {
+  width: 100%;
+  max-width: 300px;
 }
 
 .direction-choice-block .accordeon-row:first-child {
@@ -2250,15 +2281,15 @@ input:checked+.slider:before {
   margin-top: 14px;
 }
 
-.shooting-targets,
+/* .shooting-targets,
 .shooting-select {
   display: flex;
-}
+} */
 
 
-.shooting-select div:first-child {
+/* .shooting-select div:first-child {
   margin-right: 50px;
-}
+} */
 
 .camera-status {
   width: 245px;
@@ -2345,6 +2376,20 @@ input:checked+.slider:before {
     height: 58px;
   }
 
+}
+
+@media screen and (max-width: 975px) {
+  .direction-choice-block .accordeon-row {   
+    flex-direction: column;
+  }
+
+  .user-column {
+    margin: 30px auto;
+  }
+
+  .shooting-target:first-child {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 750px) {
