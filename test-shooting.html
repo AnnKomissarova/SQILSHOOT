@@ -104,43 +104,43 @@
         </div>
         <aside class="sidebar">
             <a href="index.html">
-                <div class="circle"><img src="icons/main.svg" class="menu-icon"></div>
+                <div class="circle"></div>
                 <span class="menu-item">Главная страница</span>
             </a>
             <a href="devices.html">
-                <div class="circle"><img src="icons/devices.svg" class="menu-icon"></div>
+                <div class="circle"></div>
                 <span class="menu-item">Устройства</span>
             </a>
             <a href="targets.html">
-                <div class="circle"><img src="icons/targets.svg" class="menu-icon"></div>
+                <div class="circle"></div>
                 <span class="menu-item">Мишени</span>
             </a>
             <a href="users.html">
-                <div class="circle"><img src="icons/users.svg" class="menu-icon"></div>
+                <div class="circle"></div>
                 <span class="menu-item">Пользователи</span>
             </a>
             <a href="exercises.html">
-                <div class="circle"><img src="icons/exercises.svg" class="menu-icon"></div>
+                <div class="circle"></div>
                 <span class="menu-item">Упражнения</span>
             </a>
             <a href="contours.html">
-                <div class="circle"><img src="icons/contours.svg" class="menu-icon"></div>
+                <div class="circle"></div>
                 <span class="menu-item">Контуры</span>
             </a>
             <a href="archive.html">
-                <div class="circle"><img src="icons/archive_folders.svg" class="menu-icon"></div>
+                <div class="circle"></div>
                 <span class="menu-item">Архив результатов</span>
             </a>
             <a href="shooting.html" class="menu-link active">
-                <div class="circle  active"><img src="icons/mini-gun-active.svg" class="menu-icon"></div>
+                <div class="circle  active"></div>
                 <span class="menu-item">Стрельбы</span>
             </a>
             <a href="directions.html">
-                <div class="circle"><img src="icons/directions.svg" class="menu-icon"></div>
+                <div class="circle"></div>
                 <span class="menu-item">Направления</span>
             </a>
             <a href="personal-account-admin.html">
-                <div class="circle"><img src="icons/personal-account.svg" class="menu-icon"></div>
+                <div class="circle"></div>
                 <span class="menu-item">Личный кабинет</span>
             </a>
             <a href="#"><img src="icons/exit.svg"><span class="go-out menu-item">Выйти</span></a>
@@ -183,10 +183,10 @@
                                 </div>
                                 <p>Направление 1</p>
                             </div>
-                            <div class="accordeon-btns">
+                            <!-- <div class="accordeon-btns">
                                 <button>Кнопка 1</button>
                                 <button>Кнопка 2</button>
-                            </div>                        
+                            </div>                         -->
                         </summary>
                         <div class="accordeon-information">
                             <div class="accordeon-row">
@@ -198,22 +198,16 @@
                                             <img src="img/target.png">
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="user-column">
-                                    <div class="shooting-select">
-                                        <div class="exercise-data">
-                                            <label for="userExercise">УПРАЖНЕНИЕ</label><br>
-                                            <select name="exercise" id="userExercise">
-                                                <option value="shooting-exercise-0" disabled selected
-                                                    style='display:none;'>
-                                                    Выберите упражнение</option>
-                                                <option value="shooting-exercise-1">1</option>
-                                                <option value="shooting-exercise-2">2</option>
-                                                <option value="shooting-exercise-3">3</option>
-                                            </select>
+                                    <div class="shooting-target">
+                                        <span>Мишень 1: нет данных</span>
+                                        <div class="camera-status block">
+                                            <!-- <span>КАМЕРА ОТКЛЮЧЕНА</span> -->
+                                            <img src="img/target.png">
                                         </div>
-
+                                    </div>
+                                </div>
+                               
+                                <div class="user-column">
                                         <div class="certified-data">
                                             <label for="certifiedUser">АТТЕСТУЕМЫЙ</label><br>
                                             <select name="certified" id="certifiedUser">
@@ -225,98 +219,46 @@
                                                 <option value="shooting-user-3">3</option>
                                             </select>
                                         </div>
+                                        <div class="exercise-data">
+                                            <label for="userExercise">УПРАЖНЕНИЕ</label><br>
+                                            <select name="exercise" id="userExercise">
+                                                <option value="shooting-exercise-0" disabled selected
+                                                    style='display:none;'>
+                                                    Выберите упражнение</option>
+                                                <option value="shooting-exercise-1">1</option>
+                                                <option value="shooting-exercise-2">2</option>
+                                                <option value="shooting-exercise-3">3</option>
+                                            </select>
+                                        </div> 
+                                    
+                                    <div class="number-select">
+                                        <div>
+                                            <label for="result-hits">КОЛ-ВО ВЫСТРЕЛОВ</label><br>
+                                            <input type="number" name="name" id="result-hits" placeholder="Количество выстрелов" min="0"
+                                                step="1">
+                                        </div>
+                                        <div>
+                                            <label for="result-time">ВРЕМЯ</label><br>
+                                            <input type="number" name="name" id="result-time" placeholder="Время выполнения" min="0"
+                                                step="1">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="result-column">
                                     <div>
-                                        <label for="result-time">Результат сек.</label><br>
-                                        <input type="number" name="name" id="result-time" placeholder="0" min="0"
-                                            step="1">
-                                    </div>
-                                    <div>
-                                        <label for="result-hits">Результат кол-во попаданий</label><br>
-                                        <input type="number" name="name" id="result-hits" placeholder="0" min="0"
-                                            step="1">
-                                    </div>
-                                    <div>
-                                        <label for="result-full">Результат</label><br>
+                                        <label for="result-full">РУЗУЛЬТАТ</label><br>
                                         <select name="result-full" id="result-full">
                                             <option value="result-full-0" disabled selected style='display:none;'>
-                                                Результат</option>
+                                                Результат стрельбы</option>
                                             <option value="result-full-great">Отлично</option>
                                             <option value="result-full-fine">Хорошо</option>
                                             <option value="result-full-normal">Удовлетворительно</option>
                                             <option value="result-full-bad">Недовлетворительно</option>
                                         </select>
                                     </div>
-                                </div>
+                                </div>   
                             </div>
                         </div>
                     </details>
-                </div>
-
-                <!-- <div class="direction-wrapper">
-                    <details open>
-                        <summary>
-                            <div class="accordeon-header">
-                                <div>
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-                                <p>Направление 2</p>
-                            </div>
-                        </summary>
-                        <div class="accordeon-information">
-                            <div class="accordeon-row">
-                                <div class="shooting-targets">
-                                    <div class="shooting-target">
-                                        <span>Мишень 1: нет данных</span>
-                                        <div class="camera-status">
-                                            <span>КАМЕРА ОТКЛЮЧЕНА</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="shooting-target">
-                                        <span>Мишень 2: нет данных</span>
-                                        <div class="camera-status">
-                                            <span>КАМЕРА ОТКЛЮЧЕНА</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="shooting-select">
-                                    <div class="exercise-data">
-                                        <label for="userExercise">УПРАЖНЕНИЕ</label><br>
-                                        <select name="exercise" id="userExercise">
-                                            <option value="shooting-exercise-0" disabled selected style='display:none;'>
-                                                Выберите упражнение</option>
-                                            <option value="shooting-exercise-1">1</option>
-                                            <option value="shooting-exercise-2">2</option>
-                                            <option value="shooting-exercise-3">3</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="exercise-data">
-                                        <label for="certifiedUser">АТТЕСТУЕМЫЙ</label><br>
-                                        <select name="certified" id="certifiedUser">
-                                            <option value="shooting-user-0" disabled selected style='display:none;'>
-                                                Выберите
-                                                аттестуемого</option>
-                                            <option value="shooting-user-1">1</option>
-                                            <option value="shooting-user-2">2</option>
-                                            <option value="shooting-user-3">3</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </details>
-                </div> -->
-
+                </div>               
             </div>
         </section>
         <div class="modal-camera">

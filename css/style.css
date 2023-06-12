@@ -228,11 +228,6 @@ main {
   justify-content: center;
 }
 
-.menu-icon {
-  width: 25px;
-  height: 25px;
-}
-
 .active {
   background-color: var(--primary);
   color: #F2F2F2;
@@ -657,6 +652,7 @@ form div {
 input[type="text"],
 input[type="email"],
 input[type="password"],
+input[type="number"],
 select {
   width: 100%;
   /* max-width: 220px; */
@@ -2181,17 +2177,20 @@ input:checked+.slider:before {
 }
 
 .direction-choice-block .accordeon-row label {
-  font-size: 1rem;
+  font-size: 	0.625rem;
 }
 
 .user-column {
-  margin-right: 50px;
   display: flex;
   flex-direction: column;
 }
 
-.user-column .exercise-data {
-  margin-bottom: 50px;
+.user-column div:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.user-column input, select {
+  font-size: 1rem;
 }
 
 .result-column input {
@@ -2297,19 +2296,13 @@ input:checked+.slider:before {
   margin-top: 14px;
 }
 
-/* .shooting-targets,
-.shooting-select {
+.shooting-targets {
   display: flex;
-} */
-
-
-/* .shooting-select div:first-child {
-  margin-right: 50px;
-} */
+}
 
 .camera-status {
   width: 245px;
-  height: 245px;
+  /* height: 245px; */
   background: #F8F8F8;
   border: 1px solid #D6D6D6;
   border-radius: 8px;
@@ -2401,10 +2394,30 @@ input:checked+.slider:before {
 
   .user-column {
     margin: 30px auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 550px;
   }
 
-  .shooting-target:first-child {
-    margin: 0;
+  .user-column input[type="number"] {
+    max-width: 118px;
+  }
+
+  .number-select #result-hits {
+    margin-right: 10px;
+  }
+  
+  .user-column .number-select {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .user-column .certified-data, .number-select  {
+    margin-right: 50px;
+  }
+
+  .user-column select {
+    width: 245px;
   }
 }
 
@@ -2448,25 +2461,32 @@ input:checked+.slider:before {
 
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 645px) {
   .camera-status {
     width: 100%;
-    height: 180px;
   }
 
   .camera-status span {
     font-size: 0.825rem;
   }
 
-  .shooting-select {
+  .user-column {
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
   }
 
-  .shooting-select div:first-child {
+  .user-column .certified-data, .number-select  {
     margin-right: 0;
   }
 
+  .user-column div:not(:last-of-type){
+    margin-bottom: 0;
+  }
+
+  .user-column div {
+    margin:  10px 0;
+  }
+ 
 }
 
 @media screen and (max-width: 350px) {
@@ -3185,4 +3205,92 @@ input.wrong-input {
 .grades-2 .grade span:last-of-type {
   font-size: 16px;
   width: 250px;
+}
+
+/* Menu-icons */
+
+.sidebar div {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.sidebar a:first-child div {
+  background-image: url("../icons/main.svg");  
+}
+
+.sidebar a:first-child div.active {
+  background-image: url("../icons/main-active.svg");  
+}
+
+.sidebar a:nth-child(2) div {
+  background-image: url("../icons/devices.svg");  
+}
+
+.sidebar a:nth-child(2) div.active {
+  background-image: url("../icons/devices-active.svg");  
+}
+
+.sidebar a:nth-child(3) div {
+  background-image: url("../icons/targets.svg");  
+}
+
+.sidebar a:nth-child(3) div.active {
+  background-image: url("../icons/targets-active.svg");  
+}
+
+.sidebar a:nth-child(4) div {
+  background-image: url("../icons/users_mini.svg");  
+}
+
+.sidebar a:nth-child(4) div.active {
+  background-image: url("../icons/users-active.svg");  
+}
+
+.sidebar a:nth-child(5) div {
+  background-image: url("../icons/exercises.svg");  
+}
+
+.sidebar a:nth-child(5) div.active {
+  background-image: url("../icons/exercises-active.svg");  
+}
+
+.sidebar a:nth-child(6) div {
+  background-image: url("../icons/contours.svg");  
+}
+
+.sidebar a:nth-child(6) div.active {
+  background-image: url("../icons/contours-active.svg");  
+}
+
+.sidebar a:nth-child(7) div {
+  background-image: url("../icons/archive_folders.svg");  
+}
+
+.sidebar a:nth-child(7) div.active {
+  background-image: url("../icons/archive_folders-active.svg");  
+}
+
+.sidebar a:nth-child(8) div {
+  background-image: url("../icons/mini-gun.svg");  
+}
+
+.sidebar a:nth-child(8) div.active {
+  background-image: url("../icons/mini-gun-active.svg");  
+}
+
+.sidebar a:nth-child(9) div {
+  background-image: url("../icons/directions.svg");  
+}
+
+.sidebar a:nth-child(9) div.active {
+  background-image: url("../icons/directions-active.svg");  
+}
+
+.sidebar a:nth-child(10) div {
+  background-image: url("../icons/personal-account.svg");  
+}
+
+.sidebar a:nth-child(10) div.active {
+  background-image: url("../icons/personal-account-active.svg");  
 }
