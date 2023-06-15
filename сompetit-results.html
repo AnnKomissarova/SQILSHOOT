@@ -21,7 +21,7 @@
                         <span>8 сек</span>
                     </div>
                     <div class="grades">
-                        <div class="great grade">
+                        <div class="great grade"  style="display:none;">
                             <span>Результат: отлично</span>
                             <span>Каждая мишень поражена дважды</span>
                         </div>
@@ -37,10 +37,16 @@
                             <span>Результат: неудовлетворительно</span>
                             <span>Мишени не поражены или поражена лишь одна</span>
                         </div>
+                        <div class="unknown grade">
+                            <span>Идет стрельба...</span>
+                        </div>
                     </div>
                 </div>
                 <div class="camera-status">
-                    <span>КАМЕРА ОТКЛЮЧЕНА</span>
+                    <!-- <span>КАМЕРА ОТКЛЮЧЕНА</span> -->
+                    <video controls class="video-item">
+                        <source src="video/mountain.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
 
@@ -68,10 +74,16 @@
                             <span>Результат: неудовлетворительно</span>
                             <span>Мишени не поражены или поражена лишь одна</span>
                         </div>
+                        <div class="unknown grade" style="display:none;">
+                            <span>Идет стрельба...</span>
+                        </div>
                     </div>
                 </div>
                 <div class="camera-status">
-                    <span>КАМЕРА ОТКЛЮЧЕНА</span>
+                    <!-- <span>КАМЕРА ОТКЛЮЧЕНА</span> -->
+                    <video controls class="video-item">
+                        <source src="video/coffe.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         
@@ -100,10 +112,14 @@
                         <span>Результат: неудовлетворительно</span>
                         <span>Мишени не поражены или поражена лишь одна</span>
                     </div>
+                    <div class="unknown grade" style="display:none;">
+                        <span>Идет стрельба...</span>
+                    </div>
                 </div>
             </div>
             <div class="camera-status">
                 <span>КАМЕРА ОТКЛЮЧЕНА</span>
+                <!-- <video controls class="video-item"></video> -->
             </div>
         </div>
 
@@ -131,13 +147,35 @@
                         <span>Результат: неудовлетворительно</span>
                         <span>Мишени не поражены или поражена лишь одна</span>
                     </div>
+                    <div class="unknown grade" style="display:none;">
+                        <span>Идет стрельба...</span>
+                    </div>
                 </div>
             </div>
 
             <div class="camera-status">
                 <span>КАМЕРА ОТКЛЮЧЕНА</span>
+                <!-- <video controls class="video-item"></video> -->
             </div>
         </div>
+
+        <!-- <div class="results-item inactive">
+            <div class="results-information">
+                <div class="gunner-data">                    
+                    <span>НЕАКТИВЕН</span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="grades">
+                    <div class="unknown grade">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="camera-status">
+            </div>
+        </div> -->
+
         </div>
     </div>
     </main>

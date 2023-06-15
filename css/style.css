@@ -2159,7 +2159,7 @@ input:checked+.slider:before {
   right: 10%;
 }
 
-.accordeon-btns button{
+.accordeon-btns button {
   width: 150px;
   height: 40px;
   background: #fff;
@@ -2177,7 +2177,7 @@ input:checked+.slider:before {
 }
 
 .direction-choice-block .accordeon-row label {
-  font-size: 	0.625rem;
+  font-size: 0.625rem;
 }
 
 .user-column {
@@ -2189,7 +2189,8 @@ input:checked+.slider:before {
   margin-bottom: 15px;
 }
 
-.user-column input, select {
+.user-column input,
+select {
   font-size: 1rem;
 }
 
@@ -2388,7 +2389,7 @@ input:checked+.slider:before {
 }
 
 @media screen and (max-width: 975px) {
-  .direction-choice-block .accordeon-row {   
+  .direction-choice-block .accordeon-row {
     flex-direction: column;
   }
 
@@ -2406,13 +2407,14 @@ input:checked+.slider:before {
   .number-select #result-hits {
     margin-right: 10px;
   }
-  
+
   .user-column .number-select {
     display: flex;
     flex-direction: row;
   }
 
-  .user-column .certified-data, .number-select  {
+  .user-column .certified-data,
+  .number-select {
     margin-right: 50px;
   }
 
@@ -2475,18 +2477,19 @@ input:checked+.slider:before {
     justify-content: center;
   }
 
-  .user-column .certified-data, .number-select  {
+  .user-column .certified-data,
+  .number-select {
     margin-right: 0;
   }
 
-  .user-column div:not(:last-of-type){
+  .user-column div:not(:last-of-type) {
     margin-bottom: 0;
   }
 
   .user-column div {
-    margin:  10px 0;
+    margin: 10px 0;
   }
- 
+
 }
 
 @media screen and (max-width: 350px) {
@@ -3040,6 +3043,11 @@ input.wrong-input {
 
 .results-item .camera-status {
   margin: 0;
+  height: 245px;
+}
+
+.video-item {
+  overflow: hidden;
 }
 
 .results-information {
@@ -3120,6 +3128,13 @@ input.wrong-input {
 
 .bad {
   background: #FFE5E5;
+}
+
+.unknown {
+  background: #E5F2FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Competit-shooting var-2*/
@@ -3207,6 +3222,12 @@ input.wrong-input {
   width: 250px;
 }
 
+/* Inactive */
+
+.inactive {
+  background: #F5F5F5;
+}
+
 /* Menu-icons */
 
 .sidebar div {
@@ -3216,81 +3237,81 @@ input.wrong-input {
 
 
 .sidebar a:first-child div {
-  background-image: url("../icons/main.svg");  
+  background-image: url("../icons/main.svg");
 }
 
 .sidebar a:first-child div.active {
-  background-image: url("../icons/main-active.svg");  
+  background-image: url("../icons/main-active.svg");
 }
 
 .sidebar a:nth-child(2) div {
-  background-image: url("../icons/devices.svg");  
+  background-image: url("../icons/devices.svg");
 }
 
 .sidebar a:nth-child(2) div.active {
-  background-image: url("../icons/devices-active.svg");  
+  background-image: url("../icons/devices-active.svg");
 }
 
 .sidebar a:nth-child(3) div {
-  background-image: url("../icons/targets.svg");  
+  background-image: url("../icons/targets.svg");
 }
 
 .sidebar a:nth-child(3) div.active {
-  background-image: url("../icons/targets-active.svg");  
+  background-image: url("../icons/targets-active.svg");
 }
 
 .sidebar a:nth-child(4) div {
-  background-image: url("../icons/users_mini.svg");  
+  background-image: url("../icons/users_mini.svg");
 }
 
 .sidebar a:nth-child(4) div.active {
-  background-image: url("../icons/users-active.svg");  
+  background-image: url("../icons/users-active.svg");
 }
 
 .sidebar a:nth-child(5) div {
-  background-image: url("../icons/exercises.svg");  
+  background-image: url("../icons/exercises.svg");
 }
 
 .sidebar a:nth-child(5) div.active {
-  background-image: url("../icons/exercises-active.svg");  
+  background-image: url("../icons/exercises-active.svg");
 }
 
 .sidebar a:nth-child(6) div {
-  background-image: url("../icons/contours.svg");  
+  background-image: url("../icons/contours.svg");
 }
 
 .sidebar a:nth-child(6) div.active {
-  background-image: url("../icons/contours-active.svg");  
+  background-image: url("../icons/contours-active.svg");
 }
 
 .sidebar a:nth-child(7) div {
-  background-image: url("../icons/archive_folders.svg");  
+  background-image: url("../icons/archive_folders.svg");
 }
 
 .sidebar a:nth-child(7) div.active {
-  background-image: url("../icons/archive_folders-active.svg");  
+  background-image: url("../icons/archive_folders-active.svg");
 }
 
 .sidebar a:nth-child(8) div {
-  background-image: url("../icons/mini-gun.svg");  
+  background-image: url("../icons/mini-gun.svg");
 }
 
 .sidebar a:nth-child(8) div.active {
-  background-image: url("../icons/mini-gun-active.svg");  
+  background-image: url("../icons/mini-gun-active.svg");
 }
 
 .sidebar a:nth-child(9) div {
-  background-image: url("../icons/directions.svg");  
+  background-image: url("../icons/directions.svg");
 }
 
 .sidebar a:nth-child(9) div.active {
-  background-image: url("../icons/directions-active.svg");  
+  background-image: url("../icons/directions-active.svg");
 }
 
 .sidebar a:nth-child(10) div {
-  background-image: url("../icons/personal-account.svg");  
+  background-image: url("../icons/personal-account.svg");
 }
 
 .sidebar a:nth-child(10) div.active {
-  background-image: url("../icons/personal-account-active.svg");  
+  background-image: url("../icons/personal-account-active.svg");
 }
