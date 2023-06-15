@@ -3186,6 +3186,7 @@ input.wrong-input {
 
 .gunner-2 {
   border-bottom: 1px solid #D6D6D6;
+  height: 200px;
 }
 
 .information-2 {
@@ -3226,6 +3227,31 @@ input.wrong-input {
 
 .inactive {
   background: #F5F5F5;
+  color: #7F7F7F;
+}
+
+.inactive .camera-status, .inactive .grades{
+  background: #EFEFEF;
+}
+
+.inactive .grades {
+  width: 285px;
+}
+
+.inactive .gunner-data {
+  height: 110px;
+}
+
+.inactive .gunner-2 {
+  height: 200px;
+}
+
+.inactive .grades-2 {
+  width: 100%;
+}
+
+.inactive .gunner-2 span:last-of-type, .inactive  .gunner-2 span:nth-of-type(3){
+  padding: 27px;
 }
 
 /* Menu-icons */
