@@ -3408,16 +3408,16 @@ input.wrong-input {
 }
 
 #removeButton {  
-  right: 210px;
+  top: 20px;
 }
 
 #exitButton {  
-  right: 12px;
+  top: 100px;
 }
 
 #removeButton, #exitButton {
   position: absolute; 
-  top: 10px; 
+  right: 20px; 
   background-color: var(--accent);
   border: none;
   color: black;
