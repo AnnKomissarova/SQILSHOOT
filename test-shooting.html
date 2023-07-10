@@ -185,10 +185,10 @@
                             </div>
                             <button class="buttonload">
                                 <i class="fa fa-refresh fa-spin"></i>Загрузка
-                              </button>
-                              <button class="buttonload">
+                            </button>
+                            <button class="buttonload">
                                 <i class="fa fa-spinner fa-spin"></i>Загрузка
-                              </button>
+                            </button>
                             <!-- <div class="accordeon-btns">
                                 <button>Кнопка 1</button>
                                 <button>Кнопка 2</button>
@@ -200,13 +200,19 @@
                                     <div class="shooting-target">
                                         <span>Мишень 1: нет данных</span>
                                         <div class="camera-status block">
-                                            <!-- <span>КАМЕРА ОТКЛЮЧЕНА</span> -->
-                                            <div class="fullscreen-block">
-                                                <img src="img/photo-target.jpg" >
-                                            </div>
-                                            
+                                            <img src="img/photo-target.jpg" id="myImage">
                                         </div>
                                     </div>
+
+                                    <div id="myModal">
+                                        <div id="imageContainer">
+                                            <img id="modalImage" src="" alt="Modal Image" />
+                                            <canvas id="canvas"></canvas>
+                                        </div>
+                                        <button id="removeButton">Удалить последнюю точку</button>
+                                        <button id="exitButton">Закрыть</button>
+                                    </div>
+
                                     <div class="shooting-target">
                                         <span>Мишень 1: нет данных</span>
                                         <div class="camera-status block">
@@ -215,41 +221,40 @@
                                         </div>
                                     </div>
                                 </div>
-                               
+
                                 <div class="user-column">
-                                        <div class="certified-data">
-                                            <label for="certifiedUser">АТТЕСТУЕМЫЙ</label><br>
-                                            <select name="certified" id="certifiedUser">
-                                                <option value="shooting-user-0" disabled selected style='display:none;'>
-                                                    Выберите
-                                                    аттестуемого</option>
-                                                <option value="shooting-user-1">1</option>
-                                                <option value="shooting-user-2">2</option>
-                                                <option value="shooting-user-3">3</option>
-                                            </select>
-                                        </div>
-                                        <div class="exercise-data">
-                                            <label for="userExercise">УПРАЖНЕНИЕ</label><br>
-                                            <select name="exercise" id="userExercise">
-                                                <option value="shooting-exercise-0" disabled selected
-                                                    style='display:none;'>
-                                                    Выберите упражнение</option>
-                                                <option value="shooting-exercise-1">1</option>
-                                                <option value="shooting-exercise-2">2</option>
-                                                <option value="shooting-exercise-3">3</option>
-                                            </select>
-                                        </div> 
-                                    
+                                    <div class="certified-data">
+                                        <label for="certifiedUser">АТТЕСТУЕМЫЙ</label><br>
+                                        <select name="certified" id="certifiedUser">
+                                            <option value="shooting-user-0" disabled selected style='display:none;'>
+                                                Выберите
+                                                аттестуемого</option>
+                                            <option value="shooting-user-1">1</option>
+                                            <option value="shooting-user-2">2</option>
+                                            <option value="shooting-user-3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="exercise-data">
+                                        <label for="userExercise">УПРАЖНЕНИЕ</label><br>
+                                        <select name="exercise" id="userExercise">
+                                            <option value="shooting-exercise-0" disabled selected style='display:none;'>
+                                                Выберите упражнение</option>
+                                            <option value="shooting-exercise-1">1</option>
+                                            <option value="shooting-exercise-2">2</option>
+                                            <option value="shooting-exercise-3">3</option>
+                                        </select>
+                                    </div>
+
                                     <div class="number-select">
                                         <div>
                                             <label for="result-hits">КОЛ-ВО ВЫСТРЕЛОВ</label><br>
-                                            <input type="number" name="name" id="result-hits" placeholder="Количество выстрелов" min="0"
-                                                step="1">
+                                            <input type="number" name="name" id="result-hits"
+                                                placeholder="Количество выстрелов" min="0" step="1">
                                         </div>
                                         <div>
                                             <label for="result-time">ВРЕМЯ</label><br>
-                                            <input type="number" name="name" id="result-time" placeholder="Время выполнения" min="0"
-                                                step="1">
+                                            <input type="number" name="name" id="result-time"
+                                                placeholder="Время выполнения" min="0" step="1">
                                         </div>
                                     </div>
                                     <div>
@@ -263,11 +268,11 @@
                                             <option value="result-full-bad">Недовлетворительно</option>
                                         </select>
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                         </div>
                     </details>
-                </div>               
+                </div>
             </div>
         </section>
         <div class="modal-camera">

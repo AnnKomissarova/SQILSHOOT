@@ -3238,7 +3238,8 @@ input.wrong-input {
   color: #7F7F7F;
 }
 
-.inactive .camera-status, .inactive .grades{
+.inactive .camera-status,
+.inactive .grades {
   background: #EFEFEF;
 }
 
@@ -3258,7 +3259,8 @@ input.wrong-input {
   width: 100%;
 }
 
-.inactive .gunner-2 span:last-of-type, .inactive  .gunner-2 span:nth-of-type(3){
+.inactive .gunner-2 span:last-of-type,
+.inactive .gunner-2 span:nth-of-type(3) {
   padding: 27px;
 }
 
@@ -3351,10 +3353,10 @@ input.wrong-input {
 }
 
 .buttonload {
-  background-color: var(--accent); 
-  border: none; 
-  color: black; 
-  padding: 12px 16px; 
+  background-color: var(--accent);
+  border: none;
+  color: black;
+  padding: 12px 16px;
   font-size: 1.25rem;
   border-radius: 15px;
   width: 200px;
@@ -3366,3 +3368,66 @@ input.wrong-input {
   /* display: none; */
 }
 
+.canvas {
+  position: absolute;
+  z-index: 100;
+}
+
+
+/* Canvas and modal */
+
+#myModal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#myModal img {
+  display: block;
+  margin:  auto;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#myModal canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#imageContainer {
+  position: relative;
+  height: 100vh;
+}
+
+#removeButton {  
+  right: 210px;
+}
+
+#exitButton {  
+  right: 12px;
+}
+
+#removeButton, #exitButton {
+  position: absolute; 
+  top: 10px; 
+  background-color: var(--accent);
+  border: none;
+  color: black;
+  font-size: 1.25rem;
+  border-radius: 15px;
+  width: 180px;
+  height: 60px;
+}
+
+#removeButton:hover, #exitButton:hover {
+  cursor: pointer;
+  border: 2px solid #fff;
+}
